@@ -40,51 +40,51 @@
   <div class="kt-wrapper flex grow flex-col">
     <!-- Meeting Header -->
     <header
-      class="kt-header fixed top-0 left-0 right-0 z-4 bg-gray-800 px-3.5 h-[60px] flex items-center bg-background">
-      <div class="h-full w-full rounded-lg flex items-center justify-between shadow-sm relative">
-        <div class="flex items-center gap-10">
-          <h2 class="text-mono font-semibold leading-5 tracking-normal">Trial of Stacey Lewis</h2>
-          <div class="text-destructive flex items-center gap-2">
+      class="kt-header fixed top-0 left-0 right-0 z-4 bg-gray-800 px-3.5 h-60 flex items-center bg-background">
+      <div class="h-full w-full rounded-lg flex flex-wrap items-center justify-between shadow-sm relative gap-1 pt-1">
+        <div class="flex items-center gap-10 md:w-full sm:justify-center">
+          <h2 class="text-mono font-semibold leading-5 tracking-normal lg:text-2sm">Trial of Stacey Lewis</h2>
+          <div class="text-destructive flex items-center gap-2 lg-absulate">
             <svg class="text-destructive" width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
               <!-- <svg class="text-accent-foreground/60" width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"> -->
               <circle cx="6" cy="6" r="5" fill="none" stroke="currentColor" stroke-width="1" />
               <circle cx="6" cy="6" r="3" fill="currentColor" />
             </svg>
-            <span class="text-sm font-medium">02:35</span>
+            <span class="font-medium lg:text-2sm">02:35</span>
           </div>
         </div>
-        <div class="flex items-center gap-2.5">
+        <div class="flex items-center gap-2.5 md:w-full sm:justify-center">
           <div class="flex items-center gap-0">
             <a href="javascript:;" id="caption-btn"
-              class="kt-menu-link flex flex-col items-center justify-center gap-1 px-1 py-1 mx-1 min-w-12">
+              class="kt-menu-link flex flex-col items-center justify-center gap-1 px-1 py-1 mx-1 lg:min-w-12">
               <svg class="kt-menu-link-hover:text-primary" width="16" height="16" viewBox="0 0 16 16" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M1.74414 1H13.9521C14.247 1.00033 14.6953 1.31767 14.6953 1.97852V13.7168C14.6953 14.3776 14.247 14.695 13.9521 14.6953H1.74414C1.44932 14.6953 1 14.378 1 13.7168V1.97852C1 1.31732 1.44932 1 1.74414 1ZM3.26953 7.27637C2.30459 7.27658 1.6954 8.06839 1.62305 8.86035L1.61621 9.01855L1.62305 9.17676C1.67009 9.69144 1.94476 10.2047 2.39551 10.502C1.94449 10.7992 1.67004 11.3132 1.62305 11.8281L1.61621 11.9863L1.62305 12.1445C1.6955 12.9364 2.30468 13.7283 3.26953 13.7285H5.4502C5.89499 13.7284 6.26321 13.5587 6.53906 13.2998C6.81507 13.5592 7.18449 13.7285 7.62988 13.7285H12.4258C13.4552 13.7285 14.08 12.8274 14.0801 11.9863C14.0801 11.4208 13.7966 10.8295 13.2988 10.502C13.7964 10.1744 14.0801 9.58391 14.0801 9.01855C14.0801 8.1774 13.4552 7.2764 12.4258 7.27637H10.2461C9.80098 7.27637 9.43123 7.44496 9.15527 7.7041C8.87938 7.44525 8.51025 7.27637 8.06543 7.27637H3.26953Z"
                   fill="currentColor" stroke="currentColor" stroke-width="2" />
               </svg>
-              <span class="text-2xs kt-menu-link-hover:text-primary">Caption</span>
+              <span class="text-2xs kt-menu-link-hover:text-primary hidden lg:inline">Caption</span>
             </a>
-            <a href="#" class="kt-menu-link flex flex-col items-center justify-center gap-1 px-1 py-1 mx-1 min-w-12">
+            <a href="#" class="kt-menu-link flex flex-col items-center justify-center gap-1 px-1 py-1 mx-1 lg:min-w-12">
               <svg class="kt-menu-link-hover:text-primary" width="18" height="15" viewBox="0 0 18 15" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M16 1.60715L2 1.60714C1.725 1.60714 1.5 1.84821 1.5 2.14286L1.5 5.39397C1.25313 5.37054 1.00313 5.35714 0.750002 5.35714L1.68601e-06 5.35714L2.24801e-06 2.14286C2.45467e-06 0.960938 0.896878 1.56815e-07 2 3.49691e-07L16 2.79753e-06C17.1031 2.99041e-06 18 0.960941 18 2.14286L18 12.8571C18 14.0391 17.1031 15 16 15L9 15L9 14.1964C9 13.9252 8.9875 13.6574 8.96563 13.3929L16 13.3929C16.275 13.3929 16.5 13.1518 16.5 12.8571L16.5 2.14286C16.5 1.84822 16.275 1.60715 16 1.60715ZM0.750001 6.42857C4.75313 6.42857 8 9.90737 8 14.1964C8 14.6417 7.66563 15 7.25 15C6.83437 15 6.5 14.6417 6.5 14.1964C6.5 10.7946 3.925 8.03572 0.750001 8.03572C0.334376 8.03572 1.28031e-06 7.67746 1.35817e-06 7.23214C1.43604e-06 6.78683 0.334376 6.42857 0.750001 6.42857ZM1 12.8571C1.26522 12.8571 1.51957 12.97 1.70711 13.171C1.89464 13.3719 2 13.6444 2 13.9286C2 14.2127 1.89464 14.4853 1.70711 14.6862C1.51957 14.8871 1.26522 15 1 15C0.734784 15 0.48043 14.8871 0.292893 14.6862C0.105357 14.4853 1.37649e-07 14.2127 1.87333e-07 13.9286C2.37018e-07 13.6444 0.105357 13.3719 0.292894 13.171C0.48043 12.97 0.734784 12.8571 1 12.8571ZM7.96171e-07 10.4464C8.74032e-07 10.0011 0.334376 9.64286 0.750001 9.64286C3.09688 9.64286 5 11.6819 5 14.1964C5 14.6417 4.66563 15 4.25 15C3.83437 15 3.5 14.6417 3.5 14.1964C3.5 12.5692 2.26875 11.25 0.750001 11.25C0.334376 11.25 7.1831e-07 10.8917 7.96171e-07 10.4464Z"
                   fill="currentColor" />
               </svg>
-              <span class="text-2xs kt-menu-link-hover:text-primary">Witness</span>
+              <span class="text-2xs kt-menu-link-hover:text-primary hidden lg:inline">Witness</span>
             </a>
             <div class="kt-menu" data-kt-menu="true">
               <div class="kt-menu-item" data-kt-menu-item-offset="-50%, 0" data-kt-menu-item-placement="bottom-start"
                 data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click">
-                <button class="kt-menu-link flex flex-col items-center justify-center gap-1 px-1 py-1 mx-1 min-w-12">
+                <button class="kt-menu-link flex flex-col items-center justify-center gap-1 px-1 py-1 mx-1 lg:min-w-12">
                   <svg class="kt-menu-link-hover:text-primary" width="17" height="17" viewBox="0 0 17 17" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M2.66337 2.75009L2.69307 9.87469L14.3366 9.87469L14.3069 2.75009L2.66337 2.75009ZM14.3069 1C15.2244 1 15.9703 1.78481 15.9703 2.75009L16 9.87469C16 10.84 15.2541 11.6248 14.3366 11.6248L2.69307 11.6248C1.77562 11.6248 1.0297 10.84 1.0297 9.87469L1 2.75009C1 1.78481 1.74592 1 2.66337 1L14.3069 1ZM16 14.2499L16 15.125C16 15.609 15.6283 16 15.1683 16L14.3366 16C13.8766 16 13.505 15.609 13.505 15.125L13.505 14.2499C13.505 13.7659 13.8766 13.3749 14.3366 13.3749L15.1683 13.3749C15.6283 13.3749 16 13.7659 16 14.2499ZM11.0099 13.3749C11.4699 13.3749 11.8416 13.7659 11.8416 14.2499L11.8416 15.125C11.8416 15.609 11.4699 16 11.0099 16L10.1782 16C9.71819 16 9.34654 15.609 9.34654 15.125L9.34654 14.2499C9.34654 13.7659 9.71819 13.3749 10.1782 13.3749L11.0099 13.3749ZM7.68316 14.2499L7.68316 15.125C7.68316 15.609 7.31151 16 6.85148 16L6.0198 16C5.55977 16 5.18812 15.609 5.18812 15.125L5.18812 14.2499C5.18812 13.7659 5.55977 13.3749 6.0198 13.3749L6.85148 13.3749C7.31151 13.3749 7.68316 13.7659 7.68316 14.2499ZM2.69307 13.3749C3.15309 13.3749 3.52475 13.7659 3.52475 14.2499L3.52475 15.125C3.52475 15.609 3.15309 16 2.69307 16L1.86138 16C1.40136 16 1.0297 15.609 1.0297 15.125L1.0297 14.2499C1.0297 13.7659 1.40136 13.3749 1.86138 13.3749L2.69307 13.3749Z"
                       fill="currentColor"></path>
                   </svg>
-                  <span class="text-2xs kt-menu-link-hover:text-primary">View</span>
+                  <span class="text-2xs kt-menu-link-hover:text-primary hidden lg:inline">View</span>
                 </button>
                 <div class="kt-menu-dropdown kt-menu-default w-full max-w-[220px] border-0 shadow-drop rounded-lg py-3"
                   data-kt-menu-dismiss="true">
@@ -127,9 +127,9 @@
             <div class="kt-menu" data-kt-menu="true">
               <div class="kt-menu-item" data-kt-menu-item-offset="-50%, 0" data-kt-menu-item-placement="bottom-start"
                 data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click">
-                <button class="kt-menu-link flex flex-col items-center justify-center gap-1 px-1 py-1 mx-1 min-w-12">
+                <button class="kt-menu-link flex flex-col items-center justify-center gap-1 px-1 py-1 mx-1 lg:min-w-12">
                   <i class="kt-menu-link-hover:text-primary ki-solid ki-dots-horizontal text-lg"></i>
-                  <span class="text-2xs kt-menu-link-hover:text-primary">More</span>
+                  <span class="text-2xs kt-menu-link-hover:text-primary hidden lg:inline">More</span>
                 </button>
                 <div class="kt-menu-dropdown kt-menu-default w-full max-w-[220px] border-0 shadow-drop rounded-lg py-3"
                   data-kt-menu-dismiss="true">
@@ -196,36 +196,36 @@
                 </div>
               </div>
             </div>
-            <div class="kt-separator-vertical bg-border min-h-[42px] mx-3.5"></div>
-            <a href="#" class="kt-menu-link flex flex-col items-center justify-center gap-1 px-1 py-1 mx-1 min-w-12">
+            <div class="kt-separator-vertical bg-border lg-min-h-42 lg:mx-3"></div>
+            <a href="#" class="kt-menu-link flex flex-col items-center justify-center gap-1 px-1 py-1 mx-1 lg:min-w-12">
               <svg class="kt-menu-link-hover:text-primary" width="20" height="19" viewBox="0 0 20 19" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M2.81494 4.45801H10.9077C11.791 4.45824 12.4302 5.10491 12.4302 5.80566V13.1943C12.43 13.895 11.7909 14.5408 10.9077 14.541H2.81494C1.9315 14.541 1.29164 13.8951 1.2915 13.1943V5.80566L1.29932 5.6748C1.37274 5.02622 1.98656 4.45801 2.81494 4.45801ZM17.6851 5.46387C17.8491 5.36498 18.0664 5.35365 18.2446 5.43945V5.44043C18.4199 5.52661 18.4995 5.6745 18.4995 5.80566V13.1943C18.4994 13.3254 18.4198 13.4734 18.2446 13.5596C18.0689 13.6458 17.8523 13.6361 17.686 13.5352L14.6509 11.6875H14.6519L14.4419 11.5596V7.43945L14.6509 7.31055L17.6851 5.46387Z"
                   fill="currentColor" stroke="currentColor" />
               </svg>
-              <span class="text-2xs kt-menu-link-hover:text-primary">Camera</span>
+              <span class="text-2xs kt-menu-link-hover:text-primary hidden lg:inline">Camera</span>
             </a>
-            <a href="#" class="kt-menu-link flex flex-col items-center justify-center gap-1 px-1 py-1 mx-1 min-w-12">
+            <a href="#" class="kt-menu-link flex flex-col items-center justify-center gap-1 px-1 py-1 mx-1 lg:min-w-12">
               <svg class="kt-menu-link-hover:text-primary" width="19" height="19" viewBox="0 0 19 19" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M9.5 0.791016C11.288 0.791016 12.7386 2.25374 12.7386 4.05664V9.49935C12.7386 11.3022 11.288 12.765 9.5 12.765C7.712 12.765 6.26136 11.3022 6.26136 9.49935V4.05664C6.26136 2.25374 7.712 0.791016 9.5 0.791016ZM13.8182 8.13867C13.8182 7.68625 14.1792 7.32227 14.6278 7.32227C15.0765 7.32227 15.4375 7.68625 15.4375 8.13867V9.49935C15.4375 12.5303 13.2042 15.0339 10.3097 15.4319V16.5749H11.929C12.3777 16.5749 12.7386 16.9389 12.7386 17.3913C12.7386 17.8437 12.3777 18.2077 11.929 18.2077H9.5H7.07102C6.62234 18.2077 6.26136 17.8437 6.26136 17.3913C6.26136 16.9389 6.62234 16.5749 7.07102 16.5749H8.69034V15.4319C5.79581 15.0339 3.5625 12.5303 3.5625 9.49935V8.13867C3.5625 7.68625 3.92347 7.32227 4.37216 7.32227C4.82084 7.32227 5.18182 7.68625 5.18182 8.13867V9.49935C5.18182 11.9043 7.11488 13.8535 9.5 13.8535C11.8851 13.8535 13.8182 11.9043 13.8182 9.49935V8.13867Z"
                   fill="currentColor" />
               </svg>
-              <span class="text-2xs kt-menu-link-hover:text-primary">Mic</span>
+              <span class="text-2xs kt-menu-link-hover:text-primary hidden lg:inline">Mic</span>
             </a>
-            <a href="#" class="kt-menu-link flex flex-col items-center justify-center gap-1 px-1 py-1 mx-1 min-w-12">
+            <a href="#" class="kt-menu-link flex flex-col items-center justify-center gap-1 px-1 py-1 mx-1 lg:min-w-12">
               <svg class="kt-menu-link-hover:text-primary" width="19" height="19" viewBox="0 0 19 19" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M15.4007 1.65234C16.7026 1.65234 17.761 2.65785 17.761 3.89458V15.1058C17.761 16.3425 16.7026 17.348 15.4007 17.348H3.59951C2.29768 17.348 1.23926 16.3425 1.23926 15.1058V3.89458C1.23926 2.65785 2.29768 1.65234 3.59951 1.65234H15.4007ZM7.13988 5.57626C6.64939 5.57626 6.25479 5.95113 6.25479 6.4171C6.25479 6.88306 6.64939 7.25793 7.13988 7.25793H10.6102L5.62784 11.9877C5.28118 12.317 5.28118 12.8495 5.62784 13.1753C5.97451 13.5012 6.53506 13.5047 6.87804 13.1753L11.8567 8.44562L11.8604 12.0227C11.8604 12.4887 12.255 12.8635 12.7455 12.8635C13.236 12.8635 13.6306 12.4887 13.6306 12.0227V6.4171C13.6306 5.95113 13.236 5.57626 12.7455 5.57626H7.13988Z"
                   fill="currentColor" />
               </svg>
-              <span class="text-2xs kt-menu-link-hover:text-primary">Share Screen</span>
+              <span class="text-2xs kt-menu-link-hover:text-primary hidden lg:inline">Share Screen</span>
             </a>
           </div>
-          <button class="kt-btn kt-btn-destructive px-4 text-sm h-[36px]">
+          <button class="kt-btn kt-btn-destructive px-4 text-sm h-[36px] h-36">
             <svg width="18" height="9" viewBox="0 0 18 9" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M9.00071 1.4406C5.42388 1.4406 2.76311 3.29838 1.48346 4.62794C1.3538 4.763 1.29743 5.0151 1.42427 5.28221L2.44179 7.42811C2.48688 7.52415 2.58836 7.57517 2.68701 7.55417L5.57327 6.94491C5.67756 6.9239 5.75366 6.82486 5.75366 6.71081V4.57692C5.75366 4.26479 5.93969 3.99167 6.21873 3.89263L6.31457 3.85962C8.05929 3.24736 9.94213 3.24736 11.6897 3.85962L11.7855 3.89263C12.0617 3.98867 12.2506 4.26479 12.2506 4.57692V6.71081C12.2506 6.82486 12.3267 6.9239 12.431 6.94491L15.3144 7.55417C15.4131 7.57517 15.5145 7.52415 15.5596 7.42811L16.5772 5.28221C16.704 5.0151 16.6504 4.763 16.518 4.62794C15.2383 3.29838 12.5775 1.4406 9.00071 1.4406ZM0.53922 3.59551C1.99645 2.08287 4.98136 0 9.00071 0C13.0201 0 16.005 2.08287 17.4622 3.59551C18.0823 4.24078 18.133 5.19818 17.7835 5.93049L16.766 8.07638C16.4475 8.74867 15.7457 9.11482 15.0495 8.96776L12.166 8.3585C11.4275 8.20244 10.8948 7.51215 10.8948 6.71081V5.10814C9.65463 4.74799 8.34679 4.74799 7.1066 5.10814V6.71081C7.1066 7.51215 6.57388 8.20244 5.8354 8.3585L2.94914 8.96776C2.25294 9.11482 1.5511 8.74867 1.2326 8.07638L0.215079 5.93049C-0.131611 5.19818 -0.0836943 4.24078 0.53922 3.59551Z"
@@ -236,12 +236,12 @@
         </div>
       </div>
     </header>
-    <div class="w-full h-[60px] px-3.5 py-5">&nbsp;</div>
+    <div class="w-full h-60 px-3.5 py-5">&nbsp;</div>
     <!-- End Meeting Header -->
     <main class="grow px-1.5 py-1.5 overflow-hidden bg-muted!" id="content" role="content">
       <div id="kt_splitter_main" class="kt_splitter_main splitter splitter-horizontal flex h-full gap-0">
         <aside id="kt_splitter_main_left"
-          class="kt_aside_left shadow-sm transition-all duration-400 flex w-[300px] min-w-[300px] h-full top-0 left-0 fixed shadow-none relative"
+          class="kt_aside_left shadow-sm transition-all duration-400 flex w-[300px] min-w-[300px] h-full top-0 left-0 fixed shadow-none"
           data-splitter-pane="left">
           <div id="kt_splitter_left_verticle" class="splitter w-full h-full flex flex-col">
             <div id="first_documents_accordion"
@@ -262,7 +262,7 @@
                 </div>
                 <div class="flex justify-between gap-1 mt-3">
                   <button
-                    class="kt-btn kt-btn-outline kt-btn-primary kt-btn-sm rounded-sm line-height-1 dark:bg-white dark:text-dark"
+                    class="kt-btn kt-btn-outline kt-btn-primary kt-btn-sm rounded-sm line-height-1"
                     data-kt-modal-toggle="#upload_document_modal">
                     <svg class="w-auto h-auto dark:text-dark" width="9" height="10" viewBox="0 0 9 10" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
@@ -273,7 +273,7 @@
                     Upload Document
                   </button>
                   <button
-                    class="kt-btn kt-btn-outline kt-btn-primary kt-btn-sm rounded-sm line-height-1 dark:bg-white dark:text-dark">
+                    class="kt-btn kt-btn-outline kt-btn-primary kt-btn-sm rounded-sm line-height-1">
                     <svg class="w-auto h-auto dark:text-dark" width="10" height="10" viewBox="0 0 10 10" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -285,7 +285,7 @@
                 </div>
               </div>
               <div class="kt-card-group grid gap-2.5 lg:gap-2.5 p-0">
-                <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-gray-200">
+                <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
                   <div class="flex flex-col grow gap-1 w-full">
                     <div class="flex gap-2.5 w-full">
                       <div
@@ -314,7 +314,7 @@
                         <div data-kt-accordion-item="true" class="kt-accordion-item border-0">
                           <button id="accordion_toggle_documents" data-kt-accordion-toggle="true"
                             aria-controls="accordion_content_documents"
-                            class="kt-accordion-toggle p-0 kt-btn kt-btn-outline kt-btn-primary kt-btn-sm kt-btn-icon flex relative z-1 dark:bg-white dark:text-dark">
+                            class="kt-accordion-toggle p-0 kt-btn kt-btn-outline kt-btn-primary kt-btn-sm kt-btn-icon flex relative z-1">
                             <span aria-hidden="true" class="kt-accordion-indicator text-primary">
                               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
@@ -409,7 +409,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-gray-200">
+                <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
                   <div class="flex grow gap-2.5 w-full">
                     <div
                       class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
@@ -452,7 +452,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-gray-200">
+                <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
                   <div class="flex grow gap-2.5 w-full">
                     <div
                       class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
@@ -495,7 +495,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-gray-200">
+                <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
                   <div class="flex grow gap-2.5 w-full">
                     <div
                       class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
@@ -538,9 +538,51 @@
                     </div>
                   </div>
                 </div>
-                <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-gray-200">
+                <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
                   <div class="flex grow gap-2.5 w-full">
-
+                    <div
+                      class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
+                      <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT </span>
+                      <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
+                      <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
+                    </div>
+                    <div class="flex flex-col">
+                      <span
+                        class="text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">Document
+                        1</span>
+                      <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample PDF.pdf</span>
+                      <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
+                      <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
+                        <input class="kt-switch" name="param" type="checkbox" value="1" />
+                        <span class="font-inter">Reveal</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="kt-menu" data-kt-menu="true">
+                    <div class="kt-menu-item kt-menu-item-dropdown" data-kt-menu-item-offset="0, 0"
+                      data-kt-menu-item-placement="bottom-end" data-kt-menu-item-placement-rtl="bottom-start"
+                      data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click">
+                      <button
+                        class="kt-menu-toggle kt-btn kt-btn-icon kt-btn-outline w-[30px] h-auto py-1 rounded-[4px]">
+                        <i class="ki-filled ki-dots-vertical text-lg"></i>
+                      </button>
+                      <div
+                        class="kt-menu-dropdown kt-menu-default w-full max-w-[175px] -mt-1 border-1 shadow-drop bg-background dark:bg-muted"
+                        data-kt-menu-dismiss="true">
+                        <div class="kt-menu-item">
+                          <a class="kt-menu-link px-4" href="#">
+                            <span class="kt-menu-title">Annotation Access</span>
+                          </a>
+                          <a class="kt-menu-link px-4" href="#">
+                            <span class="kt-menu-title">Edit Stamp</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
+                  <div class="flex grow gap-2.5 w-full">
                     <div
                       class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
                       <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
@@ -582,50 +624,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-gray-200">
-                  <div class="flex grow gap-2.5 w-full">
-                    <div
-                      class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
-                      <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
-                      <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
-                      <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
-                    </div>
-                    <div class="flex flex-col">
-                      <span
-                        class="text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">Document
-                        1</span>
-                      <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample PDF.pdf</span>
-                      <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
-                      <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
-                        <input class="kt-switch" name="param" type="checkbox" value="1" />
-                        <span class="font-inter">Reveal</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="kt-menu" data-kt-menu="true">
-                    <div class="kt-menu-item kt-menu-item-dropdown" data-kt-menu-item-offset="0, 0"
-                      data-kt-menu-item-placement="bottom-end" data-kt-menu-item-placement-rtl="bottom-start"
-                      data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click">
-                      <button
-                        class="kt-menu-toggle kt-btn kt-btn-icon kt-btn-outline w-[30px] h-auto py-1 rounded-[4px]">
-                        <i class="ki-filled ki-dots-vertical text-lg"></i>
-                      </button>
-                      <div
-                        class="kt-menu-dropdown kt-menu-default w-full max-w-[175px] -mt-1 border-1 shadow-drop bg-background dark:bg-muted"
-                        data-kt-menu-dismiss="true">
-                        <div class="kt-menu-item">
-                          <a class="kt-menu-link px-4" href="#">
-                            <span class="kt-menu-title">Annotation Access</span>
-                          </a>
-                          <a class="kt-menu-link px-4" href="#">
-                            <span class="kt-menu-title">Edit Stamp</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-gray-200">
+                <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
                   <div class="flex grow gap-2.5 w-full">
                     <div
                       class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
@@ -691,7 +690,7 @@
                     <span class="text-base font-semibold leading-5 tracking-normal mt-1 text-nowrap">Opp-Counsel
                       Documents</span>
                     <span aria-hidden="true"
-                      class="kt-accordion-indicator kt-btn kt-btn-outline kt-btn-primary kt-btn-sm kt-btn-icon dark:bg-white dark:text-dark">
+                      class="kt-accordion-indicator kt-btn kt-btn-outline kt-btn-primary kt-btn-sm kt-btn-icon">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
                         class="kt-accordion-indicator-on">
@@ -709,7 +708,7 @@
                     id="accordion_content_second_documents">
                     <div class="kt-accordion-wrapper">
                       <div class="kt-card-group grid gap-2.5 lg:gap-2.5 p-0">
-                        <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-gray-200">
+                        <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
                           <div class="flex grow gap-2.5">
                             <div
                               class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
@@ -753,7 +752,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-gray-200">
+                        <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
                           <div class="flex grow gap-2.5">
                             <div
                               class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
@@ -797,7 +796,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-gray-200">
+                        <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
                           <div class="flex grow gap-2.5">
                             <div
                               class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
@@ -841,7 +840,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-gray-200">
+                        <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
                           <div class="flex grow gap-2.5">
                             <div
                               class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
@@ -885,7 +884,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-gray-200">
+                        <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
                           <div class="flex grow gap-2.5">
                             <div
                               class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
@@ -929,7 +928,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-gray-200">
+                        <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
                           <div class="flex grow gap-2.5">
                             <div
                               class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
@@ -973,7 +972,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-gray-200">
+                        <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
                           <div class="flex grow gap-2.5">
                             <div
                               class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
@@ -1026,7 +1025,7 @@
           </div>
         </aside>
         <div id="kt_splitter_middle_left_bar"
-          class="splitter-bar w-1.5 h-full relative cursor-col-resize flex items-center justify-center gap-2.5 px-0.5 group"
+          class="splitter-bar w-1.5 h-full lg:inline hidden relative cursor-col-resize flex items-center justify-center gap-2.5 px-0.5 group"
           data-splitter-bar>
           <span class="h-1 w-1 rounded-full bg-gray-500 opacity-0 group-hover:opacity-100 transition-opacity"></span>
           <span class="h-1 w-1 rounded-full bg-gray-500 opacity-0 group-hover:opacity-100 transition-opacity"></span>
@@ -1060,9 +1059,9 @@
             <div class="card-body flex flex-col justify-between pb-0 overflow-hidden">
               <div class="flex flex-col flex-1 overflow-hidden" id="kt_content">
                 <div class="app h-full min-h-[400px] overflow-hidden grid">
-                  <div class="flex items-center justify-between gap-3 px-2 py-2 border-b border-gray-200 bg-background"
+                  <div class="flex items-center justify-between gap-3 px-2 py-2 border-b border-border bg-background flex-wrap"
                     id="divToolbar">
-                    <div class="flex items-center gap-2">
+                    <div class="flex items-center gap-2 md:w-full sm:justify-center">
 
                       <div class="flex items-center border border-border rounded-md" id="penStack">
                         <div class="kt-menu" data-kt-menu="true">
@@ -1070,14 +1069,14 @@
                             data-kt-menu-item-placement="bottom-start" data-kt-menu-item-toggle="dropdown"
                             data-kt-menu-item-trigger="click">
                             <button
-                              class="kt-btn kt-btn-outline kt-btn-primary kt-btn-sm border-0 dark:bg-white dark:text-dark"
+                              class="kt-btn kt-btn-outline kt-btn-primary kt-btn-sm border-0"
                               id="tool-pen" type="button" aria-label="Pen" title="Pen">
                               <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="800px" height="800px"
                                 viewBox="0 0 24 24">
                                 <path fill="currentColor"
                                   d="M12.336,1.293a1,1,0,0,0-1.414,0L7.959,4.256a1,1,0,0,0,0,1.414L9.778,7.489,2.423,9.94a1,1,0,0,0-.681.882L1,21.934a1.151,1.151,0,0,0,.291.773A1.006,1.006,0,0,0,2.065,23l11.112-.741a1,1,0,0,0,.883-.681l2.451-7.354,1.819,1.819a1,1,0,0,0,1.414,0l2.963-2.964a1,1,0,0,0,0-1.414Zm.038,19.013-7.786.519,3.464-3.464a3.057,3.057,0,0,0,3.543-.58,3.1,3.1,0,0,0,0-4.377,3.17,3.17,0,0,0-4.378,0,3.09,3.09,0,0,0-.58,3.543L3.174,19.411l.519-7.786L11.359,9.07l3.571,3.571ZM8.633,15.367a1.1,1.1,0,1,1,1.548,0A1.095,1.095,0,0,1,8.633,15.367Zm10.4-1.447-2.255-2.255v0L12.336,7.219l0,0L10.08,4.963l1.549-1.549,8.957,8.956Z" />
                               </svg>
-                              <span>Pen</span>
+                              <span class="lg:inline hidden">Pen</span>
                             </button>
                             <span class="kt-menu-toggle kt-btn-icon text-muted-foreground border-0 px-1.5"
                               type="button">
@@ -1117,7 +1116,7 @@
                                   stroke="currentColor" />
                                 <path fill="none" d="M0 0h24v24H0z" />
                               </svg>
-                              <span>Highlight</span>
+                              <span class="lg:inline hidden">Highlight</span>
                             </button>
                             <span class="kt-menu-toggle kt-btn-icon text-muted-foreground border-0 px-1.5"
                               type="button">
@@ -1150,7 +1149,7 @@
                                   d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8"
                                   stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
                               </svg>
-                              <span>Text</span>
+                              <span class="lg:inline hidden">Text</span>
                             </button>
                             <span class="kt-menu-toggle kt-btn-icon text-muted-foreground border-0 px-1.5"
                               type="button">
@@ -1212,7 +1211,7 @@
                       </div>
                     </div>
 
-                    <div class="flex items-center gap-2">
+                    <div class="flex items-center gap-2 md:w-full sm:justify-center">
                       <div class="flex items-center gap-1">
                         <button class="kt-btn kt-btn-icon kt-btn-sm kt-btn-outline" id="zoomOut" type="button"
                           aria-label="Zoom out" title="Zoom Out">
@@ -1397,7 +1396,7 @@
           </div>
         </div>
         <div id="kt_splitter_middle_right_bar"
-          class="splitter-bar w-1.5 h-full relative cursor-col-resize flex items-center justify-center gap-2.5 px-0.5 group"
+          class="splitter-bar w-1.5 h-full hidden lg:inline relative cursor-col-resize flex items-center justify-center gap-2.5 px-0.5 group"
           data-splitter-bar="true">
           <span class="h-1 w-1 rounded-full bg-gray-500 opacity-0 group-hover:opacity-100 transition-opacity"></span>
           <span class="h-1 w-1 rounded-full bg-gray-500 opacity-0 group-hover:opacity-100 transition-opacity"></span>
@@ -1524,7 +1523,7 @@
                         data-kt-menu-dismiss="true">
                         <div class="kt-menu-item">
                           <a class="kt-menu-link px-4" href="#">
-                            <span class="kt-menu-title">Add </span>
+                            <span class="kt-menu-title">Add</span>
                           </a>
                           <a class="kt-menu-link px-4" href="#">
                             <span class="kt-menu-title">Remove</span>
@@ -1720,13 +1719,13 @@
       <div class="kt-modal-header">
         <h3 class="kt-modal-title text-xl">Upload New Document(s)</h3>
         <button class="kt-btn kt-btn-sm kt-btn-icon kt-btn-ghost shrink-0" data-kt-modal-dismiss="true">
-          <i class="ki-filled ki-cross"> </i>
+          <i class="ki-filled ki-cross"></i>
         </button>
       </div>
       <div class="kt-modal-body grid gap-5 px-5 py-5">
         <form class="kt-form">
           <div class="kt-form-item mb-3">
-            <div class="border-2 border-dashed border-gray-200 rounded-lg px-5 py-5 flex items-center gap-4 relative">
+            <div class="border-2 border-dashed border-border rounded-lg px-5 py-5 flex items-center gap-4 relative">
               <input type="file" id="file_upload" class="kt-input" multiple
                 accept=".pdf,.xls,.xlsx,.doc,.docx,.ppt,.pptx,.txt,.html,.jpg,.jpeg,.png,.gif,.bmp,.tiff"
                 style="position: absolute; opacity: 0; width: 0; height: 0" />
@@ -1815,7 +1814,7 @@
       </div>
       <div class="kt-modal-body p-0">
         <div class="flex">
-          <div class="w-[200px] border-r border-border bg-background py-4">
+          <div class="w-[200px] border-r border-border bg-background py-4 min-h-[500px]">
             <div class="kt-tabs kt-tabs-line flex-col items-start border-0 gap-2" data-kt-tabs="true">
               <button class="kt-tab-toggle active w-full border-0 kt-tab-active:bg-primary/10 rounded px-4.5 py-2"
                 data-kt-tab-toggle="#tab_video">
@@ -1842,10 +1841,74 @@
           </div>
           <div class="flex-1 p-6">
             <div class="text-sm">
-              <div class="p-7" id="tab_video">
+              <div class="p-7 gap-5 grid" id="tab_video">
                 <div>
-                  <span
-                    class="text-primary text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 grid">
+                  <span class="text-sm font-medium">
+                    Camera </span>
+                  <div class="pt-2">
+                    <select class="kt-select" data-kt-select="true" data-kt-select-placeholder="Select a framework"
+                      data-kt-select-config='{
+                      "optionsClass": "kt-scrollable overflow-auto max-h-[250px]"
+                    }'>
+                      <option value="react">
+                        Integrated Webcam
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <span class="text-sm font-medium">
+                    Send resolution (maximum) </span>
+                  <div class="pt-2">
+                    <select class="kt-select" data-kt-select="true" data-kt-select-placeholder="Select a framework"
+                      data-kt-select-config='{
+                      "optionsClass": "kt-scrollable overflow-auto max-h-[250px]"
+                    }'>
+                      <option value="react">
+                        Auto
+                      </option>
+                      <option value="react2">
+                        High definition (720p)
+                      </option>
+                      <option value="react3">
+                        Standard definition (360p)
+                      </option>
+                      <option value="react4">
+                        Low definition (180p)
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <span class="text-sm font-medium">
+                    Receive resolution (maximum) </span>
+                  <div class="pt-2">
+                    <select class="kt-select" data-kt-select="true" data-kt-select-placeholder="Select a framework"
+                      data-kt-select-config='{
+                      "optionsClass": "kt-scrollable overflow-auto max-h-[250px]"
+                    }'>
+                      <option value="react11">
+                        Auto
+                      </option>
+                      <option value="react22">
+                        Full high definition (1080p)
+                      </option>
+                      <option value="react33">
+                        High definition (720p)
+                      </option>
+                      <option value="react33">
+                        Standard definition (360p)
+                      </option>
+                      <option value="react44">
+                        Audio only
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="p-7 gap-5 grid hidden" id="tab_audio">
+                <div>
+                  <span class="text-sm font-medium">
                     Microphone </span>
                   <div class="pt-2">
                     <select class="kt-select" data-kt-select="true" data-kt-select-placeholder="Select a framework"
@@ -1861,18 +1924,42 @@
                 </div>
                 <div>
                   <label for="">
-                    <h6>Push to talk</h6>
-                    <div>
-                      <p>Press and hold spacebar to unmute your mics</p>
+                    <h6 class="text-sm font-medium mb-2">Push to talk</h6>
+                    <div class="flex items-start gap-8">
+                      <p class="flex gap-1 items-center">Press and hold spacebar to unmute your mic
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24"
+                          fill="none">
+                          <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                          <path
+                            d="M10.125 8.875C10.125 7.83947 10.9645 7 12 7C13.0355 7 13.875 7.83947 13.875 8.875C13.875 9.56245 13.505 10.1635 12.9534 10.4899C12.478 10.7711 12 11.1977 12 11.75V13"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                          <circle cx="12" cy="16" r="1" fill="currentColor" />
+                        </svg>
+                      </p>
                       <div class="flex items-center gap-2.5">
-                        <input class="kt-switch" name="check" type="checkbox" value="1">
+                        <input checked="" class="kt-switch" name="param" type="checkbox" value="1">
                       </div>
                     </div>
                   </label>
                 </div>
-              </div>
-              <div class="hidden" id="tab_audio">
-                <!-- Audio content. -->
+                <div>
+                  <span class="text-sm font-medium">
+                    Speaker </span>
+                  <div class="pt-2">
+                    <select class="kt-select" data-kt-select="true" data-kt-select-placeholder="Select a framework"
+                      data-kt-select-config='{
+                        "optionsClass": "kt-scrollable overflow-auto max-h-[250px]"
+                      }'>
+                      <option value="react">
+                        HDMI (Intel(R) Display Audio) <br />
+                        System default
+                      </option>
+                      <option value="react2">
+                        Speakers / Headphones (Realtek High Definition Audio)
+                      </option>
+                    </select>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
