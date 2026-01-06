@@ -41,10 +41,10 @@
     <!-- Meeting Header -->
     <header
       class="kt-header fixed top-0 left-0 right-0 z-4 bg-gray-800 px-3.5 h-60 flex items-center bg-background">
-      <div class="h-full w-full rounded-lg flex flex-wrap items-center justify-center lg:justify-between shadow-sm relative">
-        <div class="flex items-center gap-10 pt-1">
+      <div class="h-full w-full rounded-lg flex flex-wrap items-center justify-between shadow-sm relative gap-1 pt-1">
+        <div class="flex items-center gap-10 md:w-full sm:justify-center">
           <h2 class="text-mono font-semibold leading-5 tracking-normal lg:text-2sm">Trial of Stacey Lewis</h2>
-          <div class="text-destructive flex items-center gap-2">
+          <div class="text-destructive flex items-center gap-2 lg-absulate">
             <svg class="text-destructive" width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
               <!-- <svg class="text-accent-foreground/60" width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"> -->
               <circle cx="6" cy="6" r="5" fill="none" stroke="currentColor" stroke-width="1" />
@@ -53,7 +53,7 @@
             <span class="font-medium lg:text-2sm">02:35</span>
           </div>
         </div>
-        <div class="flex items-center gap-2.5">
+        <div class="flex items-center gap-2.5 md:w-full sm:justify-center">
           <div class="flex items-center gap-0">
             <a href="javascript:;" id="caption-btn"
               class="kt-menu-link flex flex-col items-center justify-center gap-1 px-1 py-1 mx-1 lg:min-w-12">
@@ -225,7 +225,7 @@
               <span class="text-2xs kt-menu-link-hover:text-primary hidden lg:inline">Share Screen</span>
             </a>
           </div>
-          <button class="kt-btn kt-btn-destructive px-4 text-sm h-[36px]">
+          <button class="kt-btn kt-btn-destructive px-4 text-sm h-[36px] h-36">
             <svg width="18" height="9" viewBox="0 0 18 9" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M9.00071 1.4406C5.42388 1.4406 2.76311 3.29838 1.48346 4.62794C1.3538 4.763 1.29743 5.0151 1.42427 5.28221L2.44179 7.42811C2.48688 7.52415 2.58836 7.57517 2.68701 7.55417L5.57327 6.94491C5.67756 6.9239 5.75366 6.82486 5.75366 6.71081V4.57692C5.75366 4.26479 5.93969 3.99167 6.21873 3.89263L6.31457 3.85962C8.05929 3.24736 9.94213 3.24736 11.6897 3.85962L11.7855 3.89263C12.0617 3.98867 12.2506 4.26479 12.2506 4.57692V6.71081C12.2506 6.82486 12.3267 6.9239 12.431 6.94491L15.3144 7.55417C15.4131 7.57517 15.5145 7.52415 15.5596 7.42811L16.5772 5.28221C16.704 5.0151 16.6504 4.763 16.518 4.62794C15.2383 3.29838 12.5775 1.4406 9.00071 1.4406ZM0.53922 3.59551C1.99645 2.08287 4.98136 0 9.00071 0C13.0201 0 16.005 2.08287 17.4622 3.59551C18.0823 4.24078 18.133 5.19818 17.7835 5.93049L16.766 8.07638C16.4475 8.74867 15.7457 9.11482 15.0495 8.96776L12.166 8.3585C11.4275 8.20244 10.8948 7.51215 10.8948 6.71081V5.10814C9.65463 4.74799 8.34679 4.74799 7.1066 5.10814V6.71081C7.1066 7.51215 6.57388 8.20244 5.8354 8.3585L2.94914 8.96776C2.25294 9.11482 1.5511 8.74867 1.2326 8.07638L0.215079 5.93049C-0.131611 5.19818 -0.0836943 4.24078 0.53922 3.59551Z"
@@ -241,7 +241,7 @@
     <main class="grow px-1.5 py-1.5 overflow-hidden bg-muted!" id="content" role="content">
       <div id="kt_splitter_main" class="kt_splitter_main splitter splitter-horizontal flex h-full gap-0">
         <aside id="kt_splitter_main_left"
-          class="kt_aside_left shadow-sm transition-all duration-400 flex w-[300px] min-w-[300px] h-full top-0 left-0 fixed shadow-none relative"
+          class="kt_aside_left shadow-sm transition-all duration-400 flex w-[300px] min-w-[300px] h-full top-0 left-0 fixed shadow-none"
           data-splitter-pane="left">
           <div id="kt_splitter_left_verticle" class="splitter w-full h-full flex flex-col">
             <div id="first_documents_accordion"
@@ -1025,7 +1025,7 @@
           </div>
         </aside>
         <div id="kt_splitter_middle_left_bar"
-          class="splitter-bar w-1.5 h-full relative cursor-col-resize flex items-center justify-center gap-2.5 px-0.5 group"
+          class="splitter-bar w-1.5 h-full lg:inline hidden relative cursor-col-resize flex items-center justify-center gap-2.5 px-0.5 group"
           data-splitter-bar>
           <span class="h-1 w-1 rounded-full bg-gray-500 opacity-0 group-hover:opacity-100 transition-opacity"></span>
           <span class="h-1 w-1 rounded-full bg-gray-500 opacity-0 group-hover:opacity-100 transition-opacity"></span>
@@ -1059,9 +1059,9 @@
             <div class="card-body flex flex-col justify-between pb-0 overflow-hidden">
               <div class="flex flex-col flex-1 overflow-hidden" id="kt_content">
                 <div class="app h-full min-h-[400px] overflow-hidden grid">
-                  <div class="flex items-center justify-between gap-3 px-2 py-2 border-b border-gray-200 bg-background"
+                  <div class="flex items-center justify-between gap-3 px-2 py-2 border-b border-gray-200 bg-background flex-wrap"
                     id="divToolbar">
-                    <div class="flex items-center gap-2">
+                    <div class="flex items-center gap-2 md:w-full sm:justify-center">
 
                       <div class="flex items-center border border-border rounded-md" id="penStack">
                         <div class="kt-menu" data-kt-menu="true">
@@ -1211,7 +1211,7 @@
                       </div>
                     </div>
 
-                    <div class="flex items-center gap-2">
+                    <div class="flex items-center gap-2 md:w-full sm:justify-center">
                       <div class="flex items-center gap-1">
                         <button class="kt-btn kt-btn-icon kt-btn-sm kt-btn-outline" id="zoomOut" type="button"
                           aria-label="Zoom out" title="Zoom Out">
@@ -1396,7 +1396,7 @@
           </div>
         </div>
         <div id="kt_splitter_middle_right_bar"
-          class="splitter-bar w-1.5 h-full relative cursor-col-resize flex items-center justify-center gap-2.5 px-0.5 group"
+          class="splitter-bar w-1.5 h-full hidden lg:inline relative cursor-col-resize flex items-center justify-center gap-2.5 px-0.5 group"
           data-splitter-bar="true">
           <span class="h-1 w-1 rounded-full bg-gray-500 opacity-0 group-hover:opacity-100 transition-opacity"></span>
           <span class="h-1 w-1 rounded-full bg-gray-500 opacity-0 group-hover:opacity-100 transition-opacity"></span>
