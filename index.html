@@ -39,8 +39,7 @@
 <body class="flex h-full text-base text-foreground bg-background kt-header-fixed overflow-hidden">
   <div class="kt-wrapper flex grow flex-col">
     <!-- Meeting Header -->
-    <header
-      class="kt-header fixed top-0 left-0 right-0 z-4 bg-gray-800 px-3.5 h-60 flex items-center bg-background">
+    <header class="kt-header fixed top-0 left-0 right-0 z-4 bg-gray-800 px-3.5 h-60 flex items-center bg-background">
       <div class="h-full w-full rounded-lg flex flex-wrap items-center justify-between shadow-sm relative gap-1 pt-1">
         <div class="flex items-center gap-10 md:w-full sm:justify-center">
           <h2 class="text-mono font-semibold leading-5 tracking-normal lg:text-2sm">Trial of Stacey Lewis</h2>
@@ -262,6 +261,7 @@
                 </div>
                 <div class="flex justify-between gap-1 mt-3">
                   <button
+                    class="kt-btn kt-btn-outline kt-btn-primary kt-btn-sm rounded-sm line-height-1 dark:bg-white dark:text-dark"
                     class="kt-btn kt-btn-outline kt-btn-primary kt-btn-sm rounded-sm line-height-1"
                     data-kt-modal-toggle="#upload_document_modal">
                     <svg class="w-auto h-auto dark:text-dark" width="9" height="10" viewBox="0 0 9 10" fill="none"
@@ -273,7 +273,7 @@
                     Upload Document
                   </button>
                   <button
-                    class="kt-btn kt-btn-outline kt-btn-primary kt-btn-sm rounded-sm line-height-1">
+                    class="kt-btn kt-btn-outline kt-btn-primary kt-btn-sm rounded-sm line-height-1 dark:bg-white dark:text-dark">
                     <svg class="w-auto h-auto dark:text-dark" width="10" height="10" viewBox="0 0 10 10" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -283,734 +283,734 @@
                     Add Repository
                   </button>
                 </div>
-              </div>
-              <div class="kt-card-group grid gap-2.5 lg:gap-2.5 p-0">
-                <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
-                  <div class="flex flex-col grow gap-1 w-full">
-                    <div class="flex gap-2.5 w-full">
+                <div class="kt-card-group grid gap-2.5 lg:gap-2.5 p-0">
+                  <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
+                    <div class="flex flex-col grow gap-1 w-full">
+                      <div class="flex gap-2.5 w-full">
+                        <div
+                          class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600 relative">
+                          <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
+                          <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
+                          <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
+                          <a href="">
+                            <i class="ki ki-pencil"></i>
+                          </a>
+                        </div>
+                        <div class="flex flex-col">
+                          <span
+                            class="text-primary text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">Document
+                            1</span>
+                          <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample PDF.pdf</span>
+                          <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
+                          <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
+                            <input class="kt-switch" name="param" type="checkbox" value="1" checked />
+                            <span class="font-inter">Reveal</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex flex-col gap-4 w-full">
+                        <div data-kt-accordion="true" class="kt-accordion w-full relative">
+                          <div data-kt-accordion-item="true" class="kt-accordion-item border-0">
+                            <button id="accordion_toggle_documents" data-kt-accordion-toggle="true"
+                              aria-controls="accordion_content_documents"
+                              class="kt-accordion-toggle p-0 kt-btn kt-btn-outline kt-btn-primary kt-btn-sm kt-btn-icon flex relative z-1">
+                              <span aria-hidden="true" class="kt-accordion-indicator text-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                  fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                  stroke-linejoin="round" class="kt-accordion-indicator-on">
+                                  <path d="M5 12h14"></path>
+                                  <path d="M12 5v14"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                  fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                  stroke-linejoin="round" class="kt-accordion-indicator-off">
+                                  <path d="M5 12h14"></path>
+                                </svg>
+                              </span>
+                            </button>
+                            <div class="kt-accordion-content hidden ps-8 ms-1 relative"
+                              aria-labelledby="accordion_toggle_documents" id="accordion_content_documents">
+                              <div class="kt-accordion-wrapper p-0">
+                                <div class="flex flex-col gap-0 relative">
+                                  <span
+                                    class="absolute start-[20px] top-0 bottom-0 w-[2px] border-s border-border border-dashed"></span>
+                                  <div class="flex items-start gap-3 py-2.5 relative">
+                                    <span
+                                      class="absolute start-[20px] mt-2.5 w-5 border-t border-border border-dashed"></span>
+                                    <div class="flex-shrink-0 mt-0.5 ms-5">
+                                      <img class="h-5 w-5" src="assets/media/file-types/pdf.svg" alt="PDF" />
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                      <div class="flex items-start justify-between gap-3">
+                                        <div class="flex-1">
+                                          <a href="#"
+                                            class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white block">Sample
+                                            PDF.pdf</a>
+                                          <span class="text-2sm text-gray-700 mb-2 block dark:text-white">By Walter
+                                            Craighead</span>
+                                          <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
+                                            <input class="kt-switch" name="param" type="checkbox" value="1" />
+                                            <span class="font-inter">Reveal</span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="flex items-start gap-3 py-2.5 relative">
+                                    <span
+                                      class="absolute start-[20px] mt-2.5 w-5 border-t border-border border-dashed"></span>
+                                    <div class="flex-shrink-0 mt-0.5 ms-5">
+                                      <img class="h-5 w-5" src="assets/media/file-types/excel.svg" alt="Excel" />
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                      <div class="flex items-start justify-between gap-3">
+                                        <div class="flex-1">
+                                          <a href="#"
+                                            class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white block">Sample
+                                            Doc</a>
+                                          <span class="text-2sm text-gray-700 mb-2 block dark:text-white">By Walter
+                                            Craighead</span>
+                                          <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
+                                            <input class="kt-switch" name="param" type="checkbox" value="1" />
+                                            <span class="font-inter">Reveal</span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kt-menu" data-kt-menu="true">
+                      <div class="kt-menu-item kt-menu-item-dropdown" data-kt-menu-item-offset="0, 0"
+                        data-kt-menu-item-placement="bottom-end" data-kt-menu-item-placement-rtl="bottom-start"
+                        data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click">
+                        <button
+                          class="kt-menu-toggle kt-btn kt-btn-icon kt-btn-outline w-[30px] h-auto py-1 rounded-[4px]">
+                          <i class="ki-filled ki-dots-vertical text-lg"></i>
+                        </button>
+                        <div
+                          class="kt-menu-dropdown kt-menu-default w-full max-w-[175px] -mt-1 border-1 shadow-drop bg-background dark:bg-muted"
+                          data-kt-menu-dismiss="true">
+                          <div class="kt-menu-item">
+                            <a class="kt-menu-link px-4" href="#">
+                              <span class="kt-menu-title">Annotation Access</span>
+                            </a>
+                            <a class="kt-menu-link px-4" href="#">
+                              <span class="kt-menu-title">Edit Stamp</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
+                    <div class="flex grow gap-2.5 w-full">
                       <div
-                        class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600 relative">
+                        class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
                         <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
                         <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
                         <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
-                        <a href="">
-                          <i class="ki ki-pencil"></i>
-                        </a>
                       </div>
                       <div class="flex flex-col">
                         <span
-                          class="text-primary text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">Document
+                          class="text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">Document
                           1</span>
                         <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample PDF.pdf</span>
                         <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
                         <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
-                          <input class="kt-switch" name="param" type="checkbox" value="1" checked />
+                          <input class="kt-switch" name="param" type="checkbox" value="1" />
                           <span class="font-inter">Reveal</span>
                         </div>
                       </div>
                     </div>
-                    <div class="flex flex-col gap-4 w-full">
-                      <div data-kt-accordion="true" class="kt-accordion w-full relative">
-                        <div data-kt-accordion-item="true" class="kt-accordion-item border-0">
-                          <button id="accordion_toggle_documents" data-kt-accordion-toggle="true"
-                            aria-controls="accordion_content_documents"
-                            class="kt-accordion-toggle p-0 kt-btn kt-btn-outline kt-btn-primary kt-btn-sm kt-btn-icon flex relative z-1">
-                            <span aria-hidden="true" class="kt-accordion-indicator text-primary">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                                stroke-linejoin="round" class="kt-accordion-indicator-on">
-                                <path d="M5 12h14"></path>
-                                <path d="M12 5v14"></path>
-                              </svg>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                                stroke-linejoin="round" class="kt-accordion-indicator-off">
-                                <path d="M5 12h14"></path>
-                              </svg>
-                            </span>
-                          </button>
-                          <div class="kt-accordion-content hidden ps-8 ms-1 relative"
-                            aria-labelledby="accordion_toggle_documents" id="accordion_content_documents">
-                            <div class="kt-accordion-wrapper p-0">
-                              <div class="flex flex-col gap-0 relative">
+                    <div class="kt-menu" data-kt-menu="true">
+                      <div class="kt-menu-item kt-menu-item-dropdown" data-kt-menu-item-offset="0, 0"
+                        data-kt-menu-item-placement="bottom-end" data-kt-menu-item-placement-rtl="bottom-start"
+                        data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click">
+                        <button
+                          class="kt-menu-toggle kt-btn kt-btn-icon kt-btn-outline w-[30px] h-auto py-1 rounded-[4px]">
+                          <i class="ki-filled ki-dots-vertical text-lg"></i>
+                        </button>
+                        <div
+                          class="kt-menu-dropdown kt-menu-default w-full max-w-[175px] -mt-1 border-1 shadow-drop bg-background dark:bg-muted"
+                          data-kt-menu-dismiss="true">
+                          <div class="kt-menu-item">
+                            <a class="kt-menu-link px-4" href="#">
+                              <span class="kt-menu-title">Annotation Access</span>
+                            </a>
+                            <a class="kt-menu-link px-4" href="#">
+                              <span class="kt-menu-title">Edit Stamp</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
+                    <div class="flex grow gap-2.5 w-full">
+                      <div
+                        class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
+                        <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
+                        <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
+                        <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
+                      </div>
+                      <div class="flex flex-col">
+                        <span
+                          class="text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">Document
+                          1</span>
+                        <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample PDF.pdf</span>
+                        <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
+                        <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
+                          <input class="kt-switch" name="param" type="checkbox" value="1" />
+                          <span class="font-inter">Reveal</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kt-menu" data-kt-menu="true">
+                      <div class="kt-menu-item kt-menu-item-dropdown" data-kt-menu-item-offset="0, 0"
+                        data-kt-menu-item-placement="bottom-end" data-kt-menu-item-placement-rtl="bottom-start"
+                        data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click">
+                        <button
+                          class="kt-menu-toggle kt-btn kt-btn-icon kt-btn-outline w-[30px] h-auto py-1 rounded-[4px]">
+                          <i class="ki-filled ki-dots-vertical text-lg"></i>
+                        </button>
+                        <div
+                          class="kt-menu-dropdown kt-menu-default w-full max-w-[175px] -mt-1 border-1 shadow-drop bg-background dark:bg-muted"
+                          data-kt-menu-dismiss="true">
+                          <div class="kt-menu-item">
+                            <a class="kt-menu-link px-4" href="#">
+                              <span class="kt-menu-title">Annotation Access</span>
+                            </a>
+                            <a class="kt-menu-link px-4" href="#">
+                              <span class="kt-menu-title">Edit Stamp</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
+                    <div class="flex grow gap-2.5 w-full">
+                      <div
+                        class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
+                        <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
+                        <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
+                        <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
+                      </div>
+                      <div class="flex flex-col">
+                        <span
+                          class="text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">Document
+                          1</span>
+                        <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample PDF.pdf</span>
+                        <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
+                        <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
+                          <input class="kt-switch" name="param" type="checkbox" value="1" />
+                          <span class="font-inter">Reveal</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kt-menu" data-kt-menu="true">
+                      <div class="kt-menu-item kt-menu-item-dropdown" data-kt-menu-item-offset="0, 0"
+                        data-kt-menu-item-placement="bottom-end" data-kt-menu-item-placement-rtl="bottom-start"
+                        data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click">
+                        <button
+                          class="kt-menu-toggle kt-btn kt-btn-icon kt-btn-outline w-[30px] h-auto py-1 rounded-[4px]">
+                          <i class="ki-filled ki-dots-vertical text-lg"></i>
+                        </button>
+                        <div
+                          class="kt-menu-dropdown kt-menu-default w-full max-w-[175px] -mt-1 border-1 shadow-drop bg-background dark:bg-muted"
+                          data-kt-menu-dismiss="true">
+                          <div class="kt-menu-item">
+                            <a class="kt-menu-link px-4" href="#">
+                              <span class="kt-menu-title">Annotation Access</span>
+                            </a>
+                            <a class="kt-menu-link px-4" href="#">
+                              <span class="kt-menu-title">Edit Stamp</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
+                    <div class="flex grow gap-2.5 w-full">
+                      <div
+                        class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
+                        <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT </span>
+                        <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
+                        <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
+                      </div>
+                      <div class="flex flex-col">
+                        <span
+                          class="text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">Document
+                          1</span>
+                        <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample PDF.pdf</span>
+                        <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
+                        <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
+                          <input class="kt-switch" name="param" type="checkbox" value="1" />
+                          <span class="font-inter">Reveal</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kt-menu" data-kt-menu="true">
+                      <div class="kt-menu-item kt-menu-item-dropdown" data-kt-menu-item-offset="0, 0"
+                        data-kt-menu-item-placement="bottom-end" data-kt-menu-item-placement-rtl="bottom-start"
+                        data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click">
+                        <button
+                          class="kt-menu-toggle kt-btn kt-btn-icon kt-btn-outline w-[30px] h-auto py-1 rounded-[4px]">
+                          <i class="ki-filled ki-dots-vertical text-lg"></i>
+                        </button>
+                        <div
+                          class="kt-menu-dropdown kt-menu-default w-full max-w-[175px] -mt-1 border-1 shadow-drop bg-background dark:bg-muted"
+                          data-kt-menu-dismiss="true">
+                          <div class="kt-menu-item">
+                            <a class="kt-menu-link px-4" href="#">
+                              <span class="kt-menu-title">Annotation Access</span>
+                            </a>
+                            <a class="kt-menu-link px-4" href="#">
+                              <span class="kt-menu-title">Edit Stamp</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
+                    <div class="flex grow gap-2.5 w-full">
+                      <div
+                        class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
+                        <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
+                        <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
+                        <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
+                      </div>
+                      <div class="flex flex-col">
+                        <span
+                          class="text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">Document
+                          1</span>
+                        <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample PDF.pdf</span>
+                        <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
+                        <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
+                          <input class="kt-switch" name="param" type="checkbox" value="1" />
+                          <span class="font-inter">Reveal</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kt-menu" data-kt-menu="true">
+                      <div class="kt-menu-item kt-menu-item-dropdown" data-kt-menu-item-offset="0, 0"
+                        data-kt-menu-item-placement="bottom-end" data-kt-menu-item-placement-rtl="bottom-start"
+                        data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click">
+                        <button
+                          class="kt-menu-toggle kt-btn kt-btn-icon kt-btn-outline w-[30px] h-auto py-1 rounded-[4px]">
+                          <i class="ki-filled ki-dots-vertical text-lg"></i>
+                        </button>
+                        <div
+                          class="kt-menu-dropdown kt-menu-default w-full max-w-[175px] -mt-1 border-1 shadow-drop bg-background dark:bg-muted"
+                          data-kt-menu-dismiss="true">
+                          <div class="kt-menu-item">
+                            <a class="kt-menu-link px-4" href="#">
+                              <span class="kt-menu-title">Annotation Access</span>
+                            </a>
+                            <a class="kt-menu-link px-4" href="#">
+                              <span class="kt-menu-title">Edit Stamp</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
+                    <div class="flex grow gap-2.5 w-full">
+                      <div
+                        class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
+                        <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
+                        <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
+                        <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
+                      </div>
+                      <div class="flex flex-col">
+                        <span
+                          class="text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">Document
+                          1</span>
+                        <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample PDF.pdf</span>
+                        <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
+                        <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
+                          <input class="kt-switch" name="param" type="checkbox" value="1" />
+                          <span class="font-inter">Reveal</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kt-menu" data-kt-menu="true">
+                      <div class="kt-menu-item kt-menu-item-dropdown" data-kt-menu-item-offset="0, 0"
+                        data-kt-menu-item-placement="bottom-end" data-kt-menu-item-placement-rtl="bottom-start"
+                        data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click">
+                        <button
+                          class="kt-menu-toggle kt-btn kt-btn-icon kt-btn-outline w-[30px] h-auto py-1 rounded-[4px]">
+                          <i class="ki-filled ki-dots-vertical text-lg"></i>
+                        </button>
+                        <div
+                          class="kt-menu-dropdown kt-menu-default w-full max-w-[175px] -mt-1 border-1 shadow-drop bg-background dark:bg-muted"
+                          data-kt-menu-dismiss="true">
+                          <div class="kt-menu-item">
+                            <a class="kt-menu-link px-4" href="#">
+                              <span class="kt-menu-title">Annotation Access</span>
+                            </a>
+                            <a class="kt-menu-link px-4" href="#">
+                              <span class="kt-menu-title">Edit Stamp</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="splitter-bar w-full h-1.5 relative cursor-row-resize flex items-center justify-center gap-2.5 py-0.5 bg-muted"
+                data-splitter-bar="true">
+                <span
+                  class="w-1 h-1 rounded-full bg-gray-500 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                <span
+                  class="w-1 h-1 rounded-full bg-gray-500 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                <span
+                  class="w-1 h-1 rounded-full bg-gray-500 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+              </div>
+              <div id="second_documents_accordion"
+                class="splitter-pane h-half flex-grow-1 bg-background rounded-lg px-4 py-4 pt-0 kt-scrollable-y-auto min-w-[300px]"
+                data-splitter-pane="bottom">
+                <div data-kt-accordion="true" class="kt-accordion w-full relative">
+                  <div data-kt-accordion-item="true" class="kt-accordion-item border-0 active">
+                    <button id="accordion_toggle_second_doc" data-kt-accordion-toggle="true"
+                      aria-controls="accordion_content_second_documents"
+                      class="kt-accordion-toggle sticky top-0 bg-background pt-4 pb-4 z-1 w-full">
+                      <span class="text-base font-semibold leading-5 tracking-normal mt-1 text-nowrap">Opp-Counsel
+                        Documents</span>
+                      <span aria-hidden="true"
+                        class="kt-accordion-indicator kt-btn kt-btn-outline kt-btn-primary kt-btn-sm kt-btn-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                          stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                          class="kt-accordion-indicator-on">
+                          <path d="M5 12h14"></path>
+                          <path d="M12 5v14"></path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                          stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                          class="kt-accordion-indicator-off">
+                          <path d="M5 12h14"></path>
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="kt-accordion-content" aria-labelledby="accordion_toggle_second_doc"
+                      id="accordion_content_second_documents">
+                      <div class="kt-accordion-wrapper">
+                        <div class="kt-card-group grid gap-2.5 lg:gap-2.5 p-0">
+                          <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
+                            <div class="flex grow gap-2.5">
+                              <div
+                                class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
+                                <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
+                                <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
+                                <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
+                              </div>
+                              <div class="flex flex-col">
                                 <span
-                                  class="absolute start-[20px] top-0 bottom-0 w-[2px] border-s border-border border-dashed"></span>
-                                <div class="flex items-start gap-3 py-2.5 relative">
-                                  <span
-                                    class="absolute start-[20px] mt-2.5 w-5 border-t border-border border-dashed"></span>
-                                  <div class="flex-shrink-0 mt-0.5 ms-5">
-                                    <img class="h-5 w-5" src="assets/media/file-types/pdf.svg" alt="PDF" />
-                                  </div>
-                                  <div class="flex-1 min-w-0">
-                                    <div class="flex items-start justify-between gap-3">
-                                      <div class="flex-1">
-                                        <a href="#"
-                                          class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white block">Sample
-                                          PDF.pdf</a>
-                                        <span class="text-2sm text-gray-700 mb-2 block dark:text-white">By Walter
-                                          Craighead</span>
-                                        <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
-                                          <input class="kt-switch" name="param" type="checkbox" value="1" />
-                                          <span class="font-inter">Reveal</span>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
+                                  class="text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">Document
+                                  1</span>
+                                <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample
+                                  PDF.pdf</span>
+                                <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
+                                <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
+                                  <input class="kt-switch" name="param" type="checkbox" value="1" />
+                                  <span class="font-inter">Reveal</span>
                                 </div>
-                                <div class="flex items-start gap-3 py-2.5 relative">
-                                  <span
-                                    class="absolute start-[20px] mt-2.5 w-5 border-t border-border border-dashed"></span>
-                                  <div class="flex-shrink-0 mt-0.5 ms-5">
-                                    <img class="h-5 w-5" src="assets/media/file-types/excel.svg" alt="Excel" />
-                                  </div>
-                                  <div class="flex-1 min-w-0">
-                                    <div class="flex items-start justify-between gap-3">
-                                      <div class="flex-1">
-                                        <a href="#"
-                                          class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white block">Sample
-                                          Doc</a>
-                                        <span class="text-2sm text-gray-700 mb-2 block dark:text-white">By Walter
-                                          Craighead</span>
-                                        <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
-                                          <input class="kt-switch" name="param" type="checkbox" value="1" />
-                                          <span class="font-inter">Reveal</span>
-                                        </div>
-                                      </div>
-                                    </div>
+                              </div>
+                            </div>
+                            <div class="kt-menu" data-kt-menu="true">
+                              <div class="kt-menu-item kt-menu-item-dropdown" data-kt-menu-item-offset="0, 0"
+                                data-kt-menu-item-placement="bottom-end" data-kt-menu-item-placement-rtl="bottom-start"
+                                data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click">
+                                <button
+                                  class="kt-menu-toggle kt-btn kt-btn-icon kt-btn-outline w-[30px] h-auto py-1 rounded-[4px]">
+                                  <i class="ki-filled ki-dots-vertical text-lg"></i>
+                                </button>
+                                <div
+                                  class="kt-menu-dropdown kt-menu-default w-full max-w-[175px] -mt-1 border-1 shadow-drop bg-background dark:bg-muted"
+                                  data-kt-menu-dismiss="true">
+                                  <div class="kt-menu-item">
+                                    <a class="kt-menu-link px-4" href="#">
+                                      <span class="kt-menu-title">Annotation Access</span>
+                                    </a>
+                                    <a class="kt-menu-link px-4" href="#">
+                                      <span class="kt-menu-title">Edit Stamp</span>
+                                    </a>
                                   </div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="kt-menu" data-kt-menu="true">
-                    <div class="kt-menu-item kt-menu-item-dropdown" data-kt-menu-item-offset="0, 0"
-                      data-kt-menu-item-placement="bottom-end" data-kt-menu-item-placement-rtl="bottom-start"
-                      data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click">
-                      <button
-                        class="kt-menu-toggle kt-btn kt-btn-icon kt-btn-outline w-[30px] h-auto py-1 rounded-[4px]">
-                        <i class="ki-filled ki-dots-vertical text-lg"></i>
-                      </button>
-                      <div
-                        class="kt-menu-dropdown kt-menu-default w-full max-w-[175px] -mt-1 border-1 shadow-drop bg-background dark:bg-muted"
-                        data-kt-menu-dismiss="true">
-                        <div class="kt-menu-item">
-                          <a class="kt-menu-link px-4" href="#">
-                            <span class="kt-menu-title">Annotation Access</span>
-                          </a>
-                          <a class="kt-menu-link px-4" href="#">
-                            <span class="kt-menu-title">Edit Stamp</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
-                  <div class="flex grow gap-2.5 w-full">
-                    <div
-                      class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
-                      <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
-                      <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
-                      <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
-                    </div>
-                    <div class="flex flex-col">
-                      <span
-                        class="text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">Document
-                        1</span>
-                      <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample PDF.pdf</span>
-                      <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
-                      <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
-                        <input class="kt-switch" name="param" type="checkbox" value="1" />
-                        <span class="font-inter">Reveal</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="kt-menu" data-kt-menu="true">
-                    <div class="kt-menu-item kt-menu-item-dropdown" data-kt-menu-item-offset="0, 0"
-                      data-kt-menu-item-placement="bottom-end" data-kt-menu-item-placement-rtl="bottom-start"
-                      data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click">
-                      <button
-                        class="kt-menu-toggle kt-btn kt-btn-icon kt-btn-outline w-[30px] h-auto py-1 rounded-[4px]">
-                        <i class="ki-filled ki-dots-vertical text-lg"></i>
-                      </button>
-                      <div
-                        class="kt-menu-dropdown kt-menu-default w-full max-w-[175px] -mt-1 border-1 shadow-drop bg-background dark:bg-muted"
-                        data-kt-menu-dismiss="true">
-                        <div class="kt-menu-item">
-                          <a class="kt-menu-link px-4" href="#">
-                            <span class="kt-menu-title">Annotation Access</span>
-                          </a>
-                          <a class="kt-menu-link px-4" href="#">
-                            <span class="kt-menu-title">Edit Stamp</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
-                  <div class="flex grow gap-2.5 w-full">
-                    <div
-                      class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
-                      <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
-                      <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
-                      <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
-                    </div>
-                    <div class="flex flex-col">
-                      <span
-                        class="text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">Document
-                        1</span>
-                      <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample PDF.pdf</span>
-                      <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
-                      <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
-                        <input class="kt-switch" name="param" type="checkbox" value="1" />
-                        <span class="font-inter">Reveal</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="kt-menu" data-kt-menu="true">
-                    <div class="kt-menu-item kt-menu-item-dropdown" data-kt-menu-item-offset="0, 0"
-                      data-kt-menu-item-placement="bottom-end" data-kt-menu-item-placement-rtl="bottom-start"
-                      data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click">
-                      <button
-                        class="kt-menu-toggle kt-btn kt-btn-icon kt-btn-outline w-[30px] h-auto py-1 rounded-[4px]">
-                        <i class="ki-filled ki-dots-vertical text-lg"></i>
-                      </button>
-                      <div
-                        class="kt-menu-dropdown kt-menu-default w-full max-w-[175px] -mt-1 border-1 shadow-drop bg-background dark:bg-muted"
-                        data-kt-menu-dismiss="true">
-                        <div class="kt-menu-item">
-                          <a class="kt-menu-link px-4" href="#">
-                            <span class="kt-menu-title">Annotation Access</span>
-                          </a>
-                          <a class="kt-menu-link px-4" href="#">
-                            <span class="kt-menu-title">Edit Stamp</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
-                  <div class="flex grow gap-2.5 w-full">
-                    <div
-                      class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
-                      <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
-                      <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
-                      <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
-                    </div>
-                    <div class="flex flex-col">
-                      <span
-                        class="text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">Document
-                        1</span>
-                      <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample PDF.pdf</span>
-                      <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
-                      <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
-                        <input class="kt-switch" name="param" type="checkbox" value="1" />
-                        <span class="font-inter">Reveal</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="kt-menu" data-kt-menu="true">
-                    <div class="kt-menu-item kt-menu-item-dropdown" data-kt-menu-item-offset="0, 0"
-                      data-kt-menu-item-placement="bottom-end" data-kt-menu-item-placement-rtl="bottom-start"
-                      data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click">
-                      <button
-                        class="kt-menu-toggle kt-btn kt-btn-icon kt-btn-outline w-[30px] h-auto py-1 rounded-[4px]">
-                        <i class="ki-filled ki-dots-vertical text-lg"></i>
-                      </button>
-                      <div
-                        class="kt-menu-dropdown kt-menu-default w-full max-w-[175px] -mt-1 border-1 shadow-drop bg-background dark:bg-muted"
-                        data-kt-menu-dismiss="true">
-                        <div class="kt-menu-item">
-                          <a class="kt-menu-link px-4" href="#">
-                            <span class="kt-menu-title">Annotation Access</span>
-                          </a>
-                          <a class="kt-menu-link px-4" href="#">
-                            <span class="kt-menu-title">Edit Stamp</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
-                  <div class="flex grow gap-2.5 w-full">
-                    <div
-                      class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
-                      <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT </span>
-                      <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
-                      <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
-                    </div>
-                    <div class="flex flex-col">
-                      <span
-                        class="text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">Document
-                        1</span>
-                      <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample PDF.pdf</span>
-                      <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
-                      <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
-                        <input class="kt-switch" name="param" type="checkbox" value="1" />
-                        <span class="font-inter">Reveal</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="kt-menu" data-kt-menu="true">
-                    <div class="kt-menu-item kt-menu-item-dropdown" data-kt-menu-item-offset="0, 0"
-                      data-kt-menu-item-placement="bottom-end" data-kt-menu-item-placement-rtl="bottom-start"
-                      data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click">
-                      <button
-                        class="kt-menu-toggle kt-btn kt-btn-icon kt-btn-outline w-[30px] h-auto py-1 rounded-[4px]">
-                        <i class="ki-filled ki-dots-vertical text-lg"></i>
-                      </button>
-                      <div
-                        class="kt-menu-dropdown kt-menu-default w-full max-w-[175px] -mt-1 border-1 shadow-drop bg-background dark:bg-muted"
-                        data-kt-menu-dismiss="true">
-                        <div class="kt-menu-item">
-                          <a class="kt-menu-link px-4" href="#">
-                            <span class="kt-menu-title">Annotation Access</span>
-                          </a>
-                          <a class="kt-menu-link px-4" href="#">
-                            <span class="kt-menu-title">Edit Stamp</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
-                  <div class="flex grow gap-2.5 w-full">
-                    <div
-                      class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
-                      <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
-                      <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
-                      <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
-                    </div>
-                    <div class="flex flex-col">
-                      <span
-                        class="text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">Document
-                        1</span>
-                      <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample PDF.pdf</span>
-                      <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
-                      <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
-                        <input class="kt-switch" name="param" type="checkbox" value="1" />
-                        <span class="font-inter">Reveal</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="kt-menu" data-kt-menu="true">
-                    <div class="kt-menu-item kt-menu-item-dropdown" data-kt-menu-item-offset="0, 0"
-                      data-kt-menu-item-placement="bottom-end" data-kt-menu-item-placement-rtl="bottom-start"
-                      data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click">
-                      <button
-                        class="kt-menu-toggle kt-btn kt-btn-icon kt-btn-outline w-[30px] h-auto py-1 rounded-[4px]">
-                        <i class="ki-filled ki-dots-vertical text-lg"></i>
-                      </button>
-                      <div
-                        class="kt-menu-dropdown kt-menu-default w-full max-w-[175px] -mt-1 border-1 shadow-drop bg-background dark:bg-muted"
-                        data-kt-menu-dismiss="true">
-                        <div class="kt-menu-item">
-                          <a class="kt-menu-link px-4" href="#">
-                            <span class="kt-menu-title">Annotation Access</span>
-                          </a>
-                          <a class="kt-menu-link px-4" href="#">
-                            <span class="kt-menu-title">Edit Stamp</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
-                  <div class="flex grow gap-2.5 w-full">
-                    <div
-                      class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
-                      <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
-                      <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
-                      <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
-                    </div>
-                    <div class="flex flex-col">
-                      <span
-                        class="text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">Document
-                        1</span>
-                      <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample PDF.pdf</span>
-                      <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
-                      <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
-                        <input class="kt-switch" name="param" type="checkbox" value="1" />
-                        <span class="font-inter">Reveal</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="kt-menu" data-kt-menu="true">
-                    <div class="kt-menu-item kt-menu-item-dropdown" data-kt-menu-item-offset="0, 0"
-                      data-kt-menu-item-placement="bottom-end" data-kt-menu-item-placement-rtl="bottom-start"
-                      data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click">
-                      <button
-                        class="kt-menu-toggle kt-btn kt-btn-icon kt-btn-outline w-[30px] h-auto py-1 rounded-[4px]">
-                        <i class="ki-filled ki-dots-vertical text-lg"></i>
-                      </button>
-                      <div
-                        class="kt-menu-dropdown kt-menu-default w-full max-w-[175px] -mt-1 border-1 shadow-drop bg-background dark:bg-muted"
-                        data-kt-menu-dismiss="true">
-                        <div class="kt-menu-item">
-                          <a class="kt-menu-link px-4" href="#">
-                            <span class="kt-menu-title">Annotation Access</span>
-                          </a>
-                          <a class="kt-menu-link px-4" href="#">
-                            <span class="kt-menu-title">Edit Stamp</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="splitter-bar w-full h-1.5 relative cursor-row-resize flex items-center justify-center gap-2.5 py-0.5 bg-muted"
-              data-splitter-bar="true">
-              <span
-                class="w-1 h-1 rounded-full bg-gray-500 opacity-0 group-hover:opacity-100 transition-opacity"></span>
-              <span
-                class="w-1 h-1 rounded-full bg-gray-500 opacity-0 group-hover:opacity-100 transition-opacity"></span>
-              <span
-                class="w-1 h-1 rounded-full bg-gray-500 opacity-0 group-hover:opacity-100 transition-opacity"></span>
-            </div>
-            <div id="second_documents_accordion"
-              class="splitter-pane h-half flex-grow-1 bg-background rounded-lg px-4 py-4 pt-0 kt-scrollable-y-auto min-w-[300px]"
-              data-splitter-pane="bottom">
-              <div data-kt-accordion="true" class="kt-accordion w-full relative">
-                <div data-kt-accordion-item="true" class="kt-accordion-item border-0 active">
-                  <button id="accordion_toggle_second_doc" data-kt-accordion-toggle="true"
-                    aria-controls="accordion_content_second_documents"
-                    class="kt-accordion-toggle sticky top-0 bg-background pt-4 pb-4 z-1 w-full">
-                    <span class="text-base font-semibold leading-5 tracking-normal mt-1 text-nowrap">Opp-Counsel
-                      Documents</span>
-                    <span aria-hidden="true"
-                      class="kt-accordion-indicator kt-btn kt-btn-outline kt-btn-primary kt-btn-sm kt-btn-icon">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
-                        class="kt-accordion-indicator-on">
-                        <path d="M5 12h14"></path>
-                        <path d="M12 5v14"></path>
-                      </svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
-                        class="kt-accordion-indicator-off">
-                        <path d="M5 12h14"></path>
-                      </svg>
-                    </span>
-                  </button>
-                  <div class="kt-accordion-content" aria-labelledby="accordion_toggle_second_doc"
-                    id="accordion_content_second_documents">
-                    <div class="kt-accordion-wrapper">
-                      <div class="kt-card-group grid gap-2.5 lg:gap-2.5 p-0">
-                        <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
-                          <div class="flex grow gap-2.5">
-                            <div
-                              class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
-                              <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
-                              <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
-                              <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
-                            </div>
-                            <div class="flex flex-col">
-                              <span
-                                class="text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">Document
-                                1</span>
-                              <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample
-                                PDF.pdf</span>
-                              <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
-                              <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
-                                <input class="kt-switch" name="param" type="checkbox" value="1" />
-                                <span class="font-inter">Reveal</span>
+                          <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
+                            <div class="flex grow gap-2.5">
+                              <div
+                                class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
+                                <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
+                                <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
+                                <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
+                              </div>
+                              <div class="flex flex-col">
+                                <span
+                                  class="text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">Document
+                                  1</span>
+                                <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample
+                                  PDF.pdf</span>
+                                <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
+                                <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
+                                  <input class="kt-switch" name="param" type="checkbox" value="1" />
+                                  <span class="font-inter">Reveal</span>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                          <div class="kt-menu" data-kt-menu="true">
-                            <div class="kt-menu-item kt-menu-item-dropdown" data-kt-menu-item-offset="0, 0"
-                              data-kt-menu-item-placement="bottom-end" data-kt-menu-item-placement-rtl="bottom-start"
-                              data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click">
-                              <button
-                                class="kt-menu-toggle kt-btn kt-btn-icon kt-btn-outline w-[30px] h-auto py-1 rounded-[4px]">
-                                <i class="ki-filled ki-dots-vertical text-lg"></i>
-                              </button>
-                              <div
-                                class="kt-menu-dropdown kt-menu-default w-full max-w-[175px] -mt-1 border-1 shadow-drop bg-background dark:bg-muted"
-                                data-kt-menu-dismiss="true">
-                                <div class="kt-menu-item">
-                                  <a class="kt-menu-link px-4" href="#">
-                                    <span class="kt-menu-title">Annotation Access</span>
-                                  </a>
-                                  <a class="kt-menu-link px-4" href="#">
-                                    <span class="kt-menu-title">Edit Stamp</span>
-                                  </a>
+                            <div class="kt-menu" data-kt-menu="true">
+                              <div class="kt-menu-item kt-menu-item-dropdown" data-kt-menu-item-offset="0, 0"
+                                data-kt-menu-item-placement="bottom-end" data-kt-menu-item-placement-rtl="bottom-start"
+                                data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click">
+                                <button
+                                  class="kt-menu-toggle kt-btn kt-btn-icon kt-btn-outline w-[30px] h-auto py-1 rounded-[4px]">
+                                  <i class="ki-filled ki-dots-vertical text-lg"></i>
+                                </button>
+                                <div
+                                  class="kt-menu-dropdown kt-menu-default w-full max-w-[175px] -mt-1 border-1 shadow-drop bg-background dark:bg-muted"
+                                  data-kt-menu-dismiss="true">
+                                  <div class="kt-menu-item">
+                                    <a class="kt-menu-link px-4" href="#">
+                                      <span class="kt-menu-title">Annotation Access</span>
+                                    </a>
+                                    <a class="kt-menu-link px-4" href="#">
+                                      <span class="kt-menu-title">Edit Stamp</span>
+                                    </a>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
-                          <div class="flex grow gap-2.5">
-                            <div
-                              class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
-                              <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
-                              <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
-                              <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
-                            </div>
-                            <div class="flex flex-col">
-                              <span
-                                class="text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">Document
-                                1</span>
-                              <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample
-                                PDF.pdf</span>
-                              <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
-                              <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
-                                <input class="kt-switch" name="param" type="checkbox" value="1" />
-                                <span class="font-inter">Reveal</span>
+                          <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
+                            <div class="flex grow gap-2.5">
+                              <div
+                                class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
+                                <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
+                                <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
+                                <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
+                              </div>
+                              <div class="flex flex-col">
+                                <span
+                                  class="text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">Document
+                                  1</span>
+                                <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample
+                                  PDF.pdf</span>
+                                <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
+                                <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
+                                  <input class="kt-switch" name="param" type="checkbox" value="1" />
+                                  <span class="font-inter">Reveal</span>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                          <div class="kt-menu" data-kt-menu="true">
-                            <div class="kt-menu-item kt-menu-item-dropdown" data-kt-menu-item-offset="0, 0"
-                              data-kt-menu-item-placement="bottom-end" data-kt-menu-item-placement-rtl="bottom-start"
-                              data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click">
-                              <button
-                                class="kt-menu-toggle kt-btn kt-btn-icon kt-btn-outline w-[30px] h-auto py-1 rounded-[4px]">
-                                <i class="ki-filled ki-dots-vertical text-lg"></i>
-                              </button>
-                              <div
-                                class="kt-menu-dropdown kt-menu-default w-full max-w-[175px] -mt-1 border-1 shadow-drop bg-background dark:bg-muted"
-                                data-kt-menu-dismiss="true">
-                                <div class="kt-menu-item">
-                                  <a class="kt-menu-link px-4" href="#">
-                                    <span class="kt-menu-title">Annotation Access</span>
-                                  </a>
-                                  <a class="kt-menu-link px-4" href="#">
-                                    <span class="kt-menu-title">Edit Stamp</span>
-                                  </a>
+                            <div class="kt-menu" data-kt-menu="true">
+                              <div class="kt-menu-item kt-menu-item-dropdown" data-kt-menu-item-offset="0, 0"
+                                data-kt-menu-item-placement="bottom-end" data-kt-menu-item-placement-rtl="bottom-start"
+                                data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click">
+                                <button
+                                  class="kt-menu-toggle kt-btn kt-btn-icon kt-btn-outline w-[30px] h-auto py-1 rounded-[4px]">
+                                  <i class="ki-filled ki-dots-vertical text-lg"></i>
+                                </button>
+                                <div
+                                  class="kt-menu-dropdown kt-menu-default w-full max-w-[175px] -mt-1 border-1 shadow-drop bg-background dark:bg-muted"
+                                  data-kt-menu-dismiss="true">
+                                  <div class="kt-menu-item">
+                                    <a class="kt-menu-link px-4" href="#">
+                                      <span class="kt-menu-title">Annotation Access</span>
+                                    </a>
+                                    <a class="kt-menu-link px-4" href="#">
+                                      <span class="kt-menu-title">Edit Stamp</span>
+                                    </a>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
-                          <div class="flex grow gap-2.5">
-                            <div
-                              class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
-                              <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
-                              <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
-                              <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
-                            </div>
-                            <div class="flex flex-col">
-                              <span
-                                class="text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">Document
-                                1</span>
-                              <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample
-                                PDF.pdf</span>
-                              <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
-                              <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
-                                <input class="kt-switch" name="param" type="checkbox" value="1" />
-                                <span class="font-inter">Reveal</span>
+                          <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
+                            <div class="flex grow gap-2.5">
+                              <div
+                                class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
+                                <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
+                                <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
+                                <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
+                              </div>
+                              <div class="flex flex-col">
+                                <span
+                                  class="text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">Document
+                                  1</span>
+                                <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample
+                                  PDF.pdf</span>
+                                <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
+                                <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
+                                  <input class="kt-switch" name="param" type="checkbox" value="1" />
+                                  <span class="font-inter">Reveal</span>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                          <div class="kt-menu" data-kt-menu="true">
-                            <div class="kt-menu-item kt-menu-item-dropdown" data-kt-menu-item-offset="0, 0"
-                              data-kt-menu-item-placement="bottom-end" data-kt-menu-item-placement-rtl="bottom-start"
-                              data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click">
-                              <button
-                                class="kt-menu-toggle kt-btn kt-btn-icon kt-btn-outline w-[30px] h-auto py-1 rounded-[4px]">
-                                <i class="ki-filled ki-dots-vertical text-lg"></i>
-                              </button>
-                              <div
-                                class="kt-menu-dropdown kt-menu-default w-full max-w-[175px] -mt-1 border-1 shadow-drop bg-background dark:bg-muted"
-                                data-kt-menu-dismiss="true">
-                                <div class="kt-menu-item">
-                                  <a class="kt-menu-link px-4" href="#">
-                                    <span class="kt-menu-title">Annotation Access</span>
-                                  </a>
-                                  <a class="kt-menu-link px-4" href="#">
-                                    <span class="kt-menu-title">Edit Stamp</span>
-                                  </a>
+                            <div class="kt-menu" data-kt-menu="true">
+                              <div class="kt-menu-item kt-menu-item-dropdown" data-kt-menu-item-offset="0, 0"
+                                data-kt-menu-item-placement="bottom-end" data-kt-menu-item-placement-rtl="bottom-start"
+                                data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click">
+                                <button
+                                  class="kt-menu-toggle kt-btn kt-btn-icon kt-btn-outline w-[30px] h-auto py-1 rounded-[4px]">
+                                  <i class="ki-filled ki-dots-vertical text-lg"></i>
+                                </button>
+                                <div
+                                  class="kt-menu-dropdown kt-menu-default w-full max-w-[175px] -mt-1 border-1 shadow-drop bg-background dark:bg-muted"
+                                  data-kt-menu-dismiss="true">
+                                  <div class="kt-menu-item">
+                                    <a class="kt-menu-link px-4" href="#">
+                                      <span class="kt-menu-title">Annotation Access</span>
+                                    </a>
+                                    <a class="kt-menu-link px-4" href="#">
+                                      <span class="kt-menu-title">Edit Stamp</span>
+                                    </a>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
-                          <div class="flex grow gap-2.5">
-                            <div
-                              class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
-                              <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
-                              <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
-                              <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
-                            </div>
-                            <div class="flex flex-col">
-                              <span
-                                class="text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">Document
-                                1</span>
-                              <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample
-                                PDF.pdf</span>
-                              <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
-                              <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
-                                <input class="kt-switch" name="param" type="checkbox" value="1" />
-                                <span class="font-inter">Reveal</span>
+                          <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
+                            <div class="flex grow gap-2.5">
+                              <div
+                                class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
+                                <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
+                                <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
+                                <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
+                              </div>
+                              <div class="flex flex-col">
+                                <span
+                                  class="text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">Document
+                                  1</span>
+                                <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample
+                                  PDF.pdf</span>
+                                <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
+                                <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
+                                  <input class="kt-switch" name="param" type="checkbox" value="1" />
+                                  <span class="font-inter">Reveal</span>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                          <div class="kt-menu" data-kt-menu="true">
-                            <div class="kt-menu-item kt-menu-item-dropdown" data-kt-menu-item-offset="0, 0"
-                              data-kt-menu-item-placement="bottom-end" data-kt-menu-item-placement-rtl="bottom-start"
-                              data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click">
-                              <button
-                                class="kt-menu-toggle kt-btn kt-btn-icon kt-btn-outline w-[30px] h-auto py-1 rounded-[4px]">
-                                <i class="ki-filled ki-dots-vertical text-lg"></i>
-                              </button>
-                              <div
-                                class="kt-menu-dropdown kt-menu-default w-full max-w-[175px] -mt-1 border-1 shadow-drop bg-background dark:bg-muted"
-                                data-kt-menu-dismiss="true">
-                                <div class="kt-menu-item">
-                                  <a class="kt-menu-link px-4" href="#">
-                                    <span class="kt-menu-title">Annotation Access</span>
-                                  </a>
-                                  <a class="kt-menu-link px-4" href="#">
-                                    <span class="kt-menu-title">Edit Stamp</span>
-                                  </a>
+                            <div class="kt-menu" data-kt-menu="true">
+                              <div class="kt-menu-item kt-menu-item-dropdown" data-kt-menu-item-offset="0, 0"
+                                data-kt-menu-item-placement="bottom-end" data-kt-menu-item-placement-rtl="bottom-start"
+                                data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click">
+                                <button
+                                  class="kt-menu-toggle kt-btn kt-btn-icon kt-btn-outline w-[30px] h-auto py-1 rounded-[4px]">
+                                  <i class="ki-filled ki-dots-vertical text-lg"></i>
+                                </button>
+                                <div
+                                  class="kt-menu-dropdown kt-menu-default w-full max-w-[175px] -mt-1 border-1 shadow-drop bg-background dark:bg-muted"
+                                  data-kt-menu-dismiss="true">
+                                  <div class="kt-menu-item">
+                                    <a class="kt-menu-link px-4" href="#">
+                                      <span class="kt-menu-title">Annotation Access</span>
+                                    </a>
+                                    <a class="kt-menu-link px-4" href="#">
+                                      <span class="kt-menu-title">Edit Stamp</span>
+                                    </a>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
-                          <div class="flex grow gap-2.5">
-                            <div
-                              class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
-                              <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
-                              <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
-                              <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
-                            </div>
-                            <div class="flex flex-col">
-                              <span
-                                class="text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">Document
-                                1</span>
-                              <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample
-                                PDF.pdf</span>
-                              <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
-                              <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
-                                <input class="kt-switch" name="param" type="checkbox" value="1" />
-                                <span class="font-inter">Reveal</span>
+                          <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
+                            <div class="flex grow gap-2.5">
+                              <div
+                                class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
+                                <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
+                                <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
+                                <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
+                              </div>
+                              <div class="flex flex-col">
+                                <span
+                                  class="text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">Document
+                                  1</span>
+                                <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample
+                                  PDF.pdf</span>
+                                <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
+                                <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
+                                  <input class="kt-switch" name="param" type="checkbox" value="1" />
+                                  <span class="font-inter">Reveal</span>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                          <div class="kt-menu" data-kt-menu="true">
-                            <div class="kt-menu-item kt-menu-item-dropdown" data-kt-menu-item-offset="0, 0"
-                              data-kt-menu-item-placement="bottom-end" data-kt-menu-item-placement-rtl="bottom-start"
-                              data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click">
-                              <button
-                                class="kt-menu-toggle kt-btn kt-btn-icon kt-btn-outline w-[30px] h-auto py-1 rounded-[4px]">
-                                <i class="ki-filled ki-dots-vertical text-lg"></i>
-                              </button>
-                              <div
-                                class="kt-menu-dropdown kt-menu-default w-full max-w-[175px] -mt-1 border-1 shadow-drop bg-background dark:bg-muted"
-                                data-kt-menu-dismiss="true">
-                                <div class="kt-menu-item">
-                                  <a class="kt-menu-link px-4" href="#">
-                                    <span class="kt-menu-title">Annotation Access</span>
-                                  </a>
-                                  <a class="kt-menu-link px-4" href="#">
-                                    <span class="kt-menu-title">Edit Stamp</span>
-                                  </a>
+                            <div class="kt-menu" data-kt-menu="true">
+                              <div class="kt-menu-item kt-menu-item-dropdown" data-kt-menu-item-offset="0, 0"
+                                data-kt-menu-item-placement="bottom-end" data-kt-menu-item-placement-rtl="bottom-start"
+                                data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click">
+                                <button
+                                  class="kt-menu-toggle kt-btn kt-btn-icon kt-btn-outline w-[30px] h-auto py-1 rounded-[4px]">
+                                  <i class="ki-filled ki-dots-vertical text-lg"></i>
+                                </button>
+                                <div
+                                  class="kt-menu-dropdown kt-menu-default w-full max-w-[175px] -mt-1 border-1 shadow-drop bg-background dark:bg-muted"
+                                  data-kt-menu-dismiss="true">
+                                  <div class="kt-menu-item">
+                                    <a class="kt-menu-link px-4" href="#">
+                                      <span class="kt-menu-title">Annotation Access</span>
+                                    </a>
+                                    <a class="kt-menu-link px-4" href="#">
+                                      <span class="kt-menu-title">Edit Stamp</span>
+                                    </a>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
-                          <div class="flex grow gap-2.5">
-                            <div
-                              class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
-                              <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
-                              <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
-                              <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
-                            </div>
-                            <div class="flex flex-col">
-                              <span
-                                class="text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">Document
-                                1</span>
-                              <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample
-                                PDF.pdf</span>
-                              <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
-                              <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
-                                <input class="kt-switch" name="param" type="checkbox" value="1" />
-                                <span class="font-inter">Reveal</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="kt-menu" data-kt-menu="true">
-                            <div class="kt-menu-item kt-menu-item-dropdown" data-kt-menu-item-offset="0, 0"
-                              data-kt-menu-item-placement="bottom-end" data-kt-menu-item-placement-rtl="bottom-start"
-                              data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click">
-                              <button
-                                class="kt-menu-toggle kt-btn kt-btn-icon kt-btn-outline w-[30px] h-auto py-1 rounded-[4px]">
-                                <i class="ki-filled ki-dots-vertical text-lg"></i>
-                              </button>
+                          <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
+                            <div class="flex grow gap-2.5">
                               <div
-                                class="kt-menu-dropdown kt-menu-default w-full max-w-[175px] -mt-1 border-1 shadow-drop bg-background dark:bg-muted"
-                                data-kt-menu-dismiss="true">
-                                <div class="kt-menu-item">
-                                  <a class="kt-menu-link px-4" href="#">
-                                    <span class="kt-menu-title">Annotation Access</span>
-                                  </a>
-                                  <a class="kt-menu-link px-4" href="#">
-                                    <span class="kt-menu-title">Edit Stamp</span>
-                                  </a>
+                                class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
+                                <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
+                                <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
+                                <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
+                              </div>
+                              <div class="flex flex-col">
+                                <span
+                                  class="text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">Document
+                                  1</span>
+                                <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample
+                                  PDF.pdf</span>
+                                <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
+                                <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
+                                  <input class="kt-switch" name="param" type="checkbox" value="1" />
+                                  <span class="font-inter">Reveal</span>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                        </div>
-                        <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
-                          <div class="flex grow gap-2.5">
-                            <div
-                              class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
-                              <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
-                              <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
-                              <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
-                            </div>
-                            <div class="flex flex-col">
-                              <span
-                                class="text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">Document
-                                1</span>
-                              <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample
-                                PDF.pdf</span>
-                              <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
-                              <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
-                                <input class="kt-switch" name="param" type="checkbox" value="1" />
-                                <span class="font-inter">Reveal</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="kt-menu" data-kt-menu="true">
-                            <div class="kt-menu-item kt-menu-item-dropdown" data-kt-menu-item-offset="0, 0"
-                              data-kt-menu-item-placement="bottom-end" data-kt-menu-item-placement-rtl="bottom-start"
-                              data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click">
-                              <button
-                                class="kt-menu-toggle kt-btn kt-btn-icon kt-btn-outline w-[30px] h-auto py-1 rounded-[4px]">
-                                <i class="ki-filled ki-dots-vertical text-lg"></i>
-                              </button>
-                              <div
-                                class="kt-menu-dropdown kt-menu-default w-full max-w-[175px] -mt-1 border-1 shadow-drop bg-background dark:bg-muted"
-                                data-kt-menu-dismiss="true">
-                                <div class="kt-menu-item">
-                                  <a class="kt-menu-link px-4" href="#">
-                                    <span class="kt-menu-title">Annotation Access</span>
-                                  </a>
-                                  <a class="kt-menu-link px-4" href="#">
-                                    <span class="kt-menu-title">Edit Stamp</span>
-                                  </a>
+                            <div class="kt-menu" data-kt-menu="true">
+                              <div class="kt-menu-item kt-menu-item-dropdown" data-kt-menu-item-offset="0, 0"
+                                data-kt-menu-item-placement="bottom-end" data-kt-menu-item-placement-rtl="bottom-start"
+                                data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click">
+                                <button
+                                  class="kt-menu-toggle kt-btn kt-btn-icon kt-btn-outline w-[30px] h-auto py-1 rounded-[4px]">
+                                  <i class="ki-filled ki-dots-vertical text-lg"></i>
+                                </button>
+                                <div
+                                  class="kt-menu-dropdown kt-menu-default w-full max-w-[175px] -mt-1 border-1 shadow-drop bg-background dark:bg-muted"
+                                  data-kt-menu-dismiss="true">
+                                  <div class="kt-menu-item">
+                                    <a class="kt-menu-link px-4" href="#">
+                                      <span class="kt-menu-title">Annotation Access</span>
+                                    </a>
+                                    <a class="kt-menu-link px-4" href="#">
+                                      <span class="kt-menu-title">Edit Stamp</span>
+                                    </a>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -1022,7 +1022,6 @@
                 </div>
               </div>
             </div>
-          </div>
         </aside>
         <div id="kt_splitter_middle_left_bar"
           class="splitter-bar w-1.5 h-full lg:inline hidden relative cursor-col-resize flex items-center justify-center gap-2.5 px-0.5 group"
@@ -1053,24 +1052,24 @@
               <span class="path2"></span>
             </i>
           </button>
-          <div class="card bg-background rounded-lg kt-scrollable-y-auto h-full! flex flex-col flex-shrink"
+          <div class="card bg-white rounded-lg kt-scrollable-y-auto h-full! flex flex-col flex-shrink"
             data-splitter-pane="top" style="flex-shrink: 1 !important">
             <!-- <img alt="" class="w-full h-auto shrink-0 rounded-lg" src="assets/media/images/pdf-img.png" /> -->
             <div class="card-body flex flex-col justify-between pb-0 overflow-hidden">
               <div class="flex flex-col flex-1 overflow-hidden" id="kt_content">
                 <div class="app h-full min-h-[400px] overflow-hidden grid">
-                  <div class="flex items-center justify-between gap-3 px-2 py-2 border-b border-border bg-background flex-wrap"
+                  <div
+                    class="flex items-center justify-between gap-3 px-2 py-2 border-b border-gray-200 bg-white flex-wrap"
                     id="divToolbar">
                     <div class="flex items-center gap-2 md:w-full sm:justify-center">
 
-                      <div class="flex items-center border border-border rounded-md" id="penStack">
+                      <div class="flex items-center border border-gray-200 rounded-md" id="penStack">
                         <div class="kt-menu" data-kt-menu="true">
                           <div class="kt-menu-item kt-menu-item-dropdown flex flex-row" data-kt-menu-item-offset="0, 0"
                             data-kt-menu-item-placement="bottom-start" data-kt-menu-item-toggle="dropdown"
                             data-kt-menu-item-trigger="click">
-                            <button
-                              class="kt-btn kt-btn-outline kt-btn-primary kt-btn-sm border-0"
-                              id="tool-pen" type="button" aria-label="Pen" title="Pen">
+                            <button class="kt-btn kt-btn-outline kt-btn-primary kt-btn-sm border-0" id="tool-pen"
+                              type="button" aria-label="Pen" title="Pen">
                               <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="800px" height="800px"
                                 viewBox="0 0 24 24">
                                 <path fill="currentColor"
@@ -1102,7 +1101,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="flex items-center border border-border rounded-md" id="highStack">
+                      <div class="flex items-center border border-gray-200 rounded-md" id="highStack">
                         <div class="kt-menu" data-kt-menu="true">
                           <div class="kt-menu-item kt-menu-item-dropdown flex flex-row" data-kt-menu-item-offset="0, 0"
                             data-kt-menu-item-placement="bottom-start" data-kt-menu-item-toggle="dropdown"
@@ -1133,7 +1132,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="flex items-center border border-border rounded-md" id="textStack">
+                      <div class="flex items-center border border-gray-200 rounded-md" id="textStack">
                         <div class="kt-menu" data-kt-menu="true">
                           <div class="kt-menu-item kt-menu-item-dropdown flex flex-row" data-kt-menu-item-offset="5, 5"
                             data-kt-menu-item-placement="bottom-start" data-kt-menu-item-toggle="dropdown"
@@ -1213,17 +1212,17 @@
 
                     <div class="flex items-center gap-2 md:w-full sm:justify-center">
                       <div class="flex items-center gap-1">
-                        <button class="kt-btn kt-btn-icon kt-btn-sm kt-btn-outline" id="zoomOut" type="button"
+                        <button class="kt-btn kt-btn-icon kt-btn-sm kt-btn-outline dark:bg-white border-gray-custom" id="zoomOut" type="button"
                           aria-label="Zoom out" title="Zoom Out">
                           <i class="ki-filled ki-minus"></i>
                         </button>
                         <span id="zoomLabel" class="px-2 text-muted-foreground text-xs fw-semibold"
                           style="min-width: 50px; text-align: center" aria-live="polite">100%</span>
-                        <button class="kt-btn kt-btn-icon kt-btn-sm kt-btn-outline" id="zoomIn" type="button"
+                        <button class="kt-btn kt-btn-icon kt-btn-sm kt-btn-outline dark:bg-white border-gray-custom" id="zoomIn" type="button"
                           aria-label="Zoom in" title="Zoom In">
                           <i class="ki-filled ki-plus"></i>
                         </button>
-                        <button class="kt-btn kt-btn-sm kt-btn-outline ms-1" id="zoomReset" type="button"
+                        <button class="kt-btn kt-btn-sm kt-btn-outline ms-1 dark:bg-white dark:text-dark border-gray-custom" id="zoomReset" type="button"
                           aria-label="Reset zoom" title="Reset Zoom">Reset</button>
                       </div>
 
