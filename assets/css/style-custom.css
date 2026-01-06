@@ -192,6 +192,10 @@
   padding-bottom: 3px;
 }
 
+.rotate-180 {
+  rotate: 180deg;
+}
+
 .kt-card-group>.card:last-child {
   border-bottom: 0 !important;
   padding-bottom: calc(var(--spacing) * 2) !important;
