@@ -348,15 +348,11 @@
   color: var(--color-violet-800);
 }
 
+/*  */
 /* PDF */
+/*  */
 .app {
-  height: 100%;
-  min-height: 400px;
-  /* Ensure minimum usable height */
-  display: grid;
   grid-template-rows: auto 1fr;
-  overflow: hidden;
-  /* Prevent double scrollbars */
 }
 
 /* Mobile app container adjustments */
@@ -662,79 +658,4 @@ canvas.pdf {
   pointer-events: none;
   z-index: 1;
   border-radius: 2px
-}
-
-
-/* Ensure container compatibility with parent layout */
-.app-main {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-#kt_app_content_container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.card.card-flush {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  overflow: hidden;
-}
-
-.card-body {
-  flex: 1;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-#kt_content {
-  flex: 1;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Mobile-specific container adjustments */
-@media (max-width: 768px) {
-  .meeting-control {
-    padding: 8px !important;
-    gap: 8px !important;
-  }
-
-  .meeting-control .btn {
-    font-size: 12px !important;
-    padding: 8px 12px !important;
-  }
-}
-
-@media (max-width: 576px) {
-  .meeting-control {
-    flex-wrap: wrap;
-    justify-content: center !important;
-  }
-
-  .meeting-control .btn {
-    font-size: 11px !important;
-    padding: 6px 10px !important;
-  }
-}
-
-@media (hover: none) and (pointer: coarse) {
-  #divToolbar .kt-btn,
-  #divToolbar label.kt-btn,
-  .delete,
-  .resize {
-    min-width: 44px;
-    min-height: 44px;
-  }
-
-  #divToolbar {
-    gap: 10px !important;
-    padding: 10px !important;
-  }
 }
