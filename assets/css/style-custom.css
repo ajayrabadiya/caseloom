@@ -199,6 +199,10 @@
   rotate: 180deg;
 }
 
+.border-gray-custom {
+    border-color: #e5e7eb !important;
+  }
+
 @media (min-width: 64rem) {
   .lg\:min-w-12 {
     min-width: 3rem;
