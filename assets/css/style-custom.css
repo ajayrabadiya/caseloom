@@ -229,6 +229,17 @@
   }
 }
 
+@media (max-width: 1279px) {
+  .px-1\.5 {
+    padding-inline: 0;
+  }
+}
+@media (min-width: 1280px) {
+  .rounded-custom {
+    border-radius: 0.5rem;
+  }
+}
+
 .lg\:text-2sm {
   font-size: 10px;
 }
@@ -415,6 +426,16 @@
   #divToolbar {
     gap: 8px !important;
     padding: 8px 12px !important;
+  }
+
+  .kt-alert-close {
+    top: -10px;
+    right: -10px;
+  }
+
+  .kt-alert-close svg {
+    height: 10px;
+    width: 10px;
   }
 
 }
