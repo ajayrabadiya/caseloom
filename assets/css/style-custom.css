@@ -522,6 +522,24 @@ input[type=range] {
   }
 }
 
+/* When aside is active (expanded) */
+.kt_aside_left.active {
+  width: 300px; /* or 180px for right */
+  min-width: 300px; /* or 180px for right */
+  
+}
+.kt_aside_right.active {
+  width: 180px; /* or 180px for right */
+  min-width: 180px; /* or 180px for right */
+}
+
+/* When aside is not active (collapsed) */
+.kt_aside_left:not(.active),
+.kt_aside_right:not(.active) {
+  width: 0;
+  min-width: 0;
+}
+
 .page-outer {
   background: #fff;
   border-radius: 12px;
