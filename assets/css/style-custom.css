@@ -150,6 +150,9 @@
   right: calc(var(--spacing) * 1);
 }
 
+.px-px {
+  padding: 0 1px;
+}
 
 .py-4\.5 {
   padding-block: calc(var(--spacing) * 4.5);
