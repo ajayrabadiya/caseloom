@@ -227,7 +227,7 @@
     min-height: 42px !important;
   }
 
-  .h-60 {
+  .h-\[60px\] {
     height: 60px;
   }
 }
@@ -323,7 +323,6 @@
 }
 
 @media (width >=80rem) {
-
   .kt_aside_left.fixed,
   .kt_aside_right.fixed {
     position: relative;
@@ -331,7 +330,6 @@
 }
 
 @media (width <=80rem) {
-
   .kt_aside_left,
   .kt_aside_right {
     z-index: 10;
