@@ -144,6 +144,18 @@
                     </div>
                     <div class="kt-menu-item">
                       <a class="kt-menu-link flex gap-2" href="#">
+                        <svg class="kt-menu-link-hover:text-primary" fill="currentColor" width="18px" height="18px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11.29,15.71A1,1,0,0,0,13,15a1.05,1.05,0,0,0-.29-.71,1,1,0,0,0-1.09-.21,1,1,0,0,0-.33.21A1.05,1.05,0,0,0,11,15,1,1,0,0,0,11.29,15.71Zm8.62-.2H15.38a1,1,0,0,0,0,2h2.4A8,8,0,0,1,4,12a1,1,0,0,0-2,0,10,10,0,0,0,16.88,7.23V21a1,1,0,0,0,2,0V16.5A1,1,0,0,0,19.91,15.51ZM12,2A10,10,0,0,0,5.12,4.77V3a1,1,0,0,0-2,0V7.5a1,1,0,0,0,1,1H8.62a1,1,0,0,0,0-2H6.22A8,8,0,0,1,20,12a1,1,0,0,0,2,0A10,10,0,0,0,12,2Zm0,11a1,1,0,0,0,1-1V9a1,1,0,0,0-2,0v3A1,1,0,0,0,12,13Z"/></svg>
+                        <span class="kt-menu-link-hover:text-primary kt-menu-title text-sm"> Sync Document</span>
+                      </a>
+                    </div>
+                    <div class="kt-menu-item">
+                      <a class="kt-menu-link flex gap-2" href="#">
+                        <svg class="kt-menu-link-hover:text-primary" width="18px" height="18px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" color="currentColor"> <title id="controlCentreIconTitle">Control Centre</title> <path d="M4 6.5C4 4.567 5.567 3 7.5 3L16.5 3C18.433 3 20 4.567 20 6.5V6.5C20 8.433 18.433 10 16.5 10L7.5 10C5.567 10 4 8.433 4 6.5V6.5Z"/> <path d="M20 17.5C20 19.433 18.433 21 16.5 21L7.5 21C5.567 21 4 19.433 4 17.5V17.5C4 15.567 5.567 14 7.5 14L16.5 14C18.433 14 20 15.567 20 17.5V17.5Z"/> <circle cx="16.5" cy="17.5" r="1"/> <circle cx="7.5" cy="6.5" r="1"/> </svg>
+                        <span class="kt-menu-link-hover:text-primary kt-menu-title text-sm"> Take Control</span>
+                      </a>
+                    </div>
+                    <div class="kt-menu-item">
+                      <a class="kt-menu-link flex gap-2" href="#">
                         <svg class="kt-menu-link-hover:text-primary" width="18px" height="18px" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
                           <circle cx="9" cy="9" r="8" fill="none" stroke="currentColor" stroke-width="2" />
                           <circle cx="9" cy="9" r="4" fill="currentColor" />
@@ -249,7 +261,7 @@
                           fill="currentColor"
                         />
                       </svg>
-                      Upload Document
+                      Add New
                     </button>
                     <button class="kt-btn kt-btn-outline kt-btn-primary kt-btn-sm rounded-sm line-height-1 dark:bg-white dark:text-dark">
                       <svg class="w-auto h-auto dark:text-dark" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -258,7 +270,7 @@
                           fill="currentColor"
                         />
                       </svg>
-                      Add Repository
+                      Add From Repository
                     </button>
                   </div>
                 </div>
@@ -274,10 +286,10 @@
                             <i class="ki ki-pencil"></i>
                           </a>
                         </div>
-                        <div class="flex flex-col">
-                          <span class="text-primary text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1"> Document 1</span>
-                          <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample PDF.pdf</span>
-                          <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
+                        <div class="flex flex-col flex-1 min-w-0">
+                          <span class="document-truncate text-primary text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1 truncate w-[140px]"> Document 1</span>
+                          <span class="document-truncate text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white truncate w-[140px]">Sample PDF.pdf Sample PDF.pdf Sample PDF.pdf</span>
+                          <span class="document-truncate text-xs text-accent-foreground/60 mb-2 truncate w-[140px]">By Walter Craighead</span>
                           <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
                             <input class="kt-switch" name="param" type="checkbox" value="1" checked="" />
                             <span class="font-inter">Reveal</span>
@@ -866,7 +878,7 @@
                 <span class="path2"></span>
               </i>
             </button>
-            <button id="kt_aside_toggle_right" class="kt-btn kt-btn-outline kt-btn-icon size-[30px] h-[36px] absolute right-0 top-[15%] z-1 bg-muted" data-kt-toggle="true" data-kt-toggle-state="active" data-kt-toggle-target="body" data-kt-toggle-name="aside-minimize-right">
+            <button id="kt_aside_toggle_right" class="kt-btn kt-btn-outline kt-btn-icon size-[30px] h-[36px] absolute right-2 top-[15%] z-1 bg-muted" data-kt-toggle="true" data-kt-toggle-state="active" data-kt-toggle-target="body" data-kt-toggle-name="aside-minimize-right">
               <i class="ki-duotone ki-double-right fs-3 transition-transform duration-300">
                 <span class="path1"></span>
                 <span class="path2"></span>
@@ -883,7 +895,7 @@
                           <div class="kt-menu" data-kt-menu="true">
                             <div class="kt-menu-item kt-menu-item-dropdown flex flex-row" data-kt-menu-item-offset="0, 0" data-kt-menu-item-placement="bottom-start" data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click">
                               <button class="kt-btn kt-btn-outline kt-btn-primary kt-btn-sm border-0" id="tool-pen" type="button" aria-label="Pen" title="Pen">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="800px" height="800px" viewBox="0 0 24 24">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="800px" height="800px" viewBox="0 0 24 24">
                                   <path
                                     fill="currentColor"
                                     d="M12.336,1.293a1,1,0,0,0-1.414,0L7.959,4.256a1,1,0,0,0,0,1.414L9.778,7.489,2.423,9.94a1,1,0,0,0-.681.882L1,21.934a1.151,1.151,0,0,0,.291.773A1.006,1.006,0,0,0,2.065,23l11.112-.741a1,1,0,0,0,.883-.681l2.451-7.354,1.819,1.819a1,1,0,0,0,1.414,0l2.963-2.964a1,1,0,0,0,0-1.414Zm.038,19.013-7.786.519,3.464-3.464a3.057,3.057,0,0,0,3.543-.58,3.1,3.1,0,0,0,0-4.377,3.17,3.17,0,0,0-4.378,0,3.09,3.09,0,0,0-.58,3.543L3.174,19.411l.519-7.786L11.359,9.07l3.571,3.571ZM8.633,15.367a1.1,1.1,0,1,1,1.548,0A1.095,1.095,0,0,1,8.633,15.367Zm10.4-1.447-2.255-2.255v0L12.336,7.219l0,0L10.08,4.963l1.549-1.549,8.957,8.956Z"
@@ -966,7 +978,7 @@
                         </div>
                         <div class="flex items-center gap-2" id="selectImage">
                           <button class="kt-btn kt-btn-outline kt-btn-primary kt-btn-sm" id="tool-select" type="button" aria-pressed="true" aria-label="Select tool" title="Select">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" height="14px" width="14px" version="1.1" viewBox="0 0 24 24" xml:space="preserve">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor" height="14px" width="14px" version="1.1" viewBox="0 0 24 24" xml:space="preserve">
                               <g id="select">
                                 <path d="M14.8,24l-3.3-4.3l-3.2,4.2L5.8,6.9l16,7.2L16.4,16l3.2,4.3L14.8,24z M11.6,16.4l3.6,4.8l1.6-1.3L13.1,15l3.3-1.1l-8.1-3.6   l1.3,8.7L11.6,16.4z" fill="currentColor" />
                                 <path d="M4,18H0v-4h2v2h2V18z M2,12H0V6h2V12z M18,10h-2V6h2V10z M18,4h-2V2h-2V0h4V4z M2,4H0V0h4v2H2V4z M12,2H6V0h6V2z" fill="currentColor" />
@@ -1142,7 +1154,7 @@
             <span class="h-1 w-1 rounded-full bg-gray-500 opacity-0 group-hover:opacity-100 transition-opacity"></span>
             <span class="h-1 w-1 rounded-full bg-gray-500 opacity-0 group-hover:opacity-100 transition-opacity"></span>
           </div>
-          <aside id="kt_splitter_main_right" class="kt_aside_right splitter-pane w-[180px] min-w-[180px] max-w-[400px] h-full shadow-sm transition-all duration-400 top-0 right-0 fixed shadow-none bg-background" data-splitter-pane="right">
+          <aside id="kt_splitter_main_right" class="kt_aside_right splitter-pane w-[200px] min-w-[200px] max-w-[400px] h-full shadow-sm transition-all duration-400 top-0 right-0 fixed shadow-none bg-background" data-splitter-pane="right">
             <div id="kt_splitter_right_verticle" class="splitter h-full flex flex-col">
               <div class="splitter-pane h-full bg-background rounded-lg overflow-hidden transition-all duration-400 flex flex-col" data-splitter-pane="top">
                 <div class="px-2.5 py-2.5 pb-0 flex items-center justify-between">
@@ -1227,7 +1239,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="flex-1 px-2.5 py-2.5 kt-scrollable-y-auto flex flex-col gap-2 min-w-[180px] bg-background">
+                <div class="flex-1 px-2.5 py-2.5 kt-scrollable-y-auto flex flex-col gap-2 min-w-[200px] bg-background">
                   <div class="relative w-full bg-gray-200 rounded-md participant-card" data-status="admitted">
                     <div class="relative flex items-center justify-center shrink-0 rounded-md font-semibold leading-none text-xl size-10 text-mono bg-gray-400 dark:bg-light w-full min-h-[100px] h-auto">AS</div>
                     <div class="absolute top-1 left-1">
@@ -1486,8 +1498,9 @@
         </div>
       </div>
     </div>
+    
     <!-- Device Setting Modal -->
-    <div class="kt-modal" data-kt-modal="true" id="device_setting_modal">
+    <div class="kt-modal device_setting_modal" data-kt-modal="true" id="device_setting_modal">
       <div class="kt-modal-content max-w-[800px] top-5 lg:top-[15%]">
         <div class="kt-modal-header">
           <h3 class="kt-modal-title text-xl">Device Settings</h3>
@@ -1496,10 +1509,10 @@
           </button>
         </div>
         <div class="kt-modal-body p-0">
-          <div class="flex">
-            <div class="w-[200px] border-r border-border bg-background py-4 min-h-[500px]">
-              <div class="kt-tabs kt-tabs-line flex-col items-start border-0 gap-2" data-kt-tabs="true">
-                <button class="kt-tab-toggle active w-full border-0 kt-tab-active:bg-primary/10 rounded px-4.5 py-2" data-kt-tab-toggle="#tab_video">
+          <div class="flex flex-col md:flex-row">
+            <div class="w-full md:w-[200px] border-r border-border bg-background pt-4 pb-0 md:pb-4 md:min-h-[500px]">
+              <div class="kt-tabs kt-tabs-line md:flex-col items-start border-0 gap-2" data-kt-tabs="true">
+                <button class="kt-tab-toggle active md:min-w-full border-0 kt-tab-active:bg-primary/10 rounded px-4.5 py-2" data-kt-tab-toggle="#tab_video">
                   <svg class="w-5 h-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M16 10L18.5768 8.45392C19.3699 7.97803 19.7665 7.74009 20.0928 7.77051C20.3773 7.79703 20.6369 7.944 20.806 8.17433C21 8.43848 21 8.90095 21 9.8259V14.1741C21 15.099 21 15.5615 20.806 15.8257C20.6369 16.056 20.3773 16.203 20.0928 16.2295C19.7665 16.2599 19.3699 16.022 18.5768 15.5461L16 14M6.2 18H12.8C13.9201 18 14.4802 18 14.908 17.782C15.2843 17.5903 15.5903 17.2843 15.782 16.908C16 16.4802 16 15.9201 16 14.8V9.2C16 8.0799 16 7.51984 15.782 7.09202C15.5903 6.71569 15.2843 6.40973 14.908 6.21799C14.4802 6 13.9201 6 12.8 6H6.2C5.0799 6 4.51984 6 4.09202 6.21799C3.71569 6.40973 3.40973 6.71569 3.21799 7.09202C3 7.51984 3 8.07989 3 9.2V14.8C3 15.9201 3 16.4802 3.21799 16.908C3.40973 17.2843 3.71569 17.5903 4.09202 17.782C4.51984 18 5.07989 18 6.2 18Z"
@@ -1511,7 +1524,7 @@
                   </svg>
                   Video
                 </button>
-                <button class="kt-tab-toggle border-0 w-full kt-tab-active:bg-primary/10 rounded px-4.5 py-2" data-kt-tab-toggle="#tab_audio">
+                <button class="kt-tab-toggle border-0 md:min-w-full kt-tab-active:bg-primary/10 rounded px-4.5 py-2" data-kt-tab-toggle="#tab_audio">
                   <svg class="w-5 h-5" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="4.36" y="1.5" width="15.27" height="21" />
                     <circle cx="12" cy="6.27" r="1.91"></circle>
@@ -1524,7 +1537,7 @@
             </div>
             <div class="flex-1 p-6">
               <div class="text-sm">
-                <div class="p-7 gap-5 grid" id="tab_video">
+                <div class="p-5 md:p-7 gap-5 grid" id="tab_video">
                   <div>
                     <span class="text-sm font-medium"> Camera</span>
                     <div class="pt-2">
@@ -1578,7 +1591,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="p-7 gap-5 grid hidden" id="tab_audio">
+                <div class="p-5 md:p-7 gap-5 grid hidden" id="tab_audio">
                   <div>
                     <span class="text-sm font-medium"> Microphone</span>
                     <div class="pt-2">
@@ -1728,6 +1741,26 @@
           max: 600,
           orientation: "vertical",
         });
+
+        // Update document filename span width when splitter moves
+        const asidePanel = document.getElementById("kt_splitter_main_left");
+        const filenameSpans = document.querySelectorAll(".document-truncate");
+        
+        if (asidePanel && filenameSpans.length > 0) {
+          const updateWidth = () => {
+            const asideWidth = asidePanel.offsetWidth;
+            const availableWidth = asideWidth - 112; // Total offsets: padding(32) + gap(10) + exhibit(65) + margin(5)
+            const ratio = 140 / 188; // 140px at 300px aside (188px available)
+            const calculatedWidth = Math.max(100, Math.min(availableWidth * ratio, availableWidth - 10));
+            filenameSpans.forEach(span => {
+              span.style.width = Math.round(calculatedWidth) + "px";
+            });
+          };
+
+          new ResizeObserver(updateWidth).observe(asidePanel);
+          asidePanel.addEventListener('splitter-resize', updateWidth);
+          updateWidth();
+        }
 
         document.querySelectorAll(".participant-status").forEach((item) => {
           item.addEventListener("click", function (e) {
@@ -1934,7 +1967,7 @@
           const currentWidth = asideRight.style.width;
           const computedWidth = window.getComputedStyle(asideRight).width;
           const isCollapsedRight = currentWidth === "0px" || currentWidth === "0" || (currentWidth === "" && computedWidth === "0px");
-          const originalWidthRight = "180px";
+          const originalWidthRight = "200px";
 
           asideRight.style.transition = "width 400ms ease-in-out, min-width 400ms ease-in-out";
 
@@ -1944,7 +1977,7 @@
 
             requestAnimationFrame(() => {
               asideRight.style.width = originalWidthRight;
-              asideRight.style.minWidth = "180px";
+              asideRight.style.minWidth = "200px";
 
               setTimeout(() => {
                 asideRight.style.overflow = "";

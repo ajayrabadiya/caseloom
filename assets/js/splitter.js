@@ -184,11 +184,19 @@ class KTSplitter {
                     const w = this.startLeftWidth + deltaX;
                     if (w >= this.options.min && w <= this.options.max) {
                         this.left.style.width = w + "px";
+                        // Dispatch custom event for left panel resize
+                        this.left.dispatchEvent(new CustomEvent('splitter-resize', { 
+                            detail: { width: w, panel: 'left' } 
+                        }));
                     }
                 } else if (this.activeBar === "right") {
                     const w = this.startRightWidth - deltaX;
                     if (w >= this.options.min && w <= this.options.max) {
                         this.right.style.width = w + "px";
+                        // Dispatch custom event for right panel resize
+                        this.right.dispatchEvent(new CustomEvent('splitter-resize', { 
+                            detail: { width: w, panel: 'right' } 
+                        }));
                     }
                 }
             });
@@ -235,6 +243,10 @@ class KTSplitter {
             requestAnimationFrame(() => {
                 if (w >= this.options.min && w <= this.options.max) {
                     this.left.style.width = w + "px";
+                    // Dispatch custom event for left panel resize
+                    this.left.dispatchEvent(new CustomEvent('splitter-resize', { 
+                        detail: { width: w, panel: 'left' } 
+                    }));
                 }
             });
         };
