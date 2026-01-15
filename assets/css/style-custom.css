@@ -115,6 +115,9 @@
 .hover-border-primary:hover {
   border-color: var(--primary);
 }
+.hover-card:hover .hover-text {
+  color: var(--primary) !important;
+}
 
 .bg-light {
   background-color: var(--color-blue-50);

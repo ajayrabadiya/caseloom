@@ -54,15 +54,16 @@
           </div>
         </div>
         <div class="xl-hidden flex border border-primary px-2 py-1 bg-primary/10 rounded-md items-center gap-2">
-          <svg stroke="currentColor" fill="currentColor" class="text-primary" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"
-            xmlns="http://www.w3.org/2000/svg">
+          <svg stroke="currentColor" fill="currentColor" class="text-primary" stroke-width="0" viewBox="0 0 512 512"
+            height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M428 224H288a48 48 0 0 1-48-48V36a4 4 0 0 0-4-4h-92a64 64 0 0 0-64 64v320a64 64 0 0 0 64 64h224a64 64 0 0 0 64-64V228a4 4 0 0 0-4-4zm-92 160H176a16 16 0 0 1 0-32h160a16 16 0 0 1 0 32zm0-80H176a16 16 0 0 1 0-32h160a16 16 0 0 1 0 32z">
             </path>
             <path d="M419.22 188.59 275.41 44.78a2 2 0 0 0-3.41 1.41V176a16 16 0 0 0 16 16h129.81a2 2 0 0 0 1.41-3.41z">
             </path>
           </svg>
-          <p class="text-xs"><span class="font-semibold">Now Viewing: </span> <span class="text-primary">Exhibit 0001 - Document </span> 1 (Page 2 of 14)</p>
+          <p class="text-xs"><span class="font-semibold">Now Viewing: </span> <span class="text-primary">Exhibit 0001 -
+              Document </span> 1 (Page 2 of 14)</p>
         </div>
         <div class="flex items-center gap-2.5 md:w-full sm:justify-center">
           <div class="flex items-center gap-0">
@@ -326,24 +327,26 @@
                 <div class="card flex items-start gap-1.5 pt-2.5 pb-5 border-b border-dashed border-border">
                   <div class="flex flex-col grow gap-1 w-full">
                     <div class="flex gap-2.5 w-full document-active">
-                      <div
-                        class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600 relative">
+                      <a href=""
+                        class="min-w-[65px] w-[65px] overflow-hidden h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600 relative">
                         <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
                         <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
                         <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
-                        <a href="">
+                        <!-- <a href="">
                           <i class="ki ki-pencil"></i>
-                        </a>
-                      </div>
+                        </a> -->
+                      </a>
                       <div class="flex flex-col flex-1 min-w-0">
-                        <span
-                          class="document-truncate text-primary text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1 truncate w-[140px]">
-                          Document 1</span>
-                        <span
-                          class="document-truncate text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white truncate w-[140px]">Sample
-                          PDF.pdf Sample PDF.pdf Sample PDF.pdf</span>
-                        <span class="document-truncate text-xs text-accent-foreground/60 mb-2 truncate w-[140px]">By
-                          Walter Craighead</span>
+                        <a href="" class="flex flex-col">
+                          <span
+                            class="document-truncate text-primary text-sm font-semibold cursor-pointer hover-text -mt-0.5 line-height-1 pb-1 truncate w-[140px]">
+                            Document 1</span>
+                          <span
+                            class="document-truncate text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white truncate w-[140px]">Sample
+                            PDF.pdf Sample PDF.pdf Sample PDF.pdf</span>
+                          <span class="document-truncate text-xs text-accent-foreground/60 mb-2 truncate w-[140px]">By
+                            Walter Craighead</span>
+                        </a>
                         <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
                           <input class="kt-switch" name="param" type="checkbox" value="1" checked="" />
                           <span class="font-inter">Reveal</span>
@@ -383,17 +386,19 @@
                                 <div class="flex items-start gap-3 py-2.5 relative">
                                   <span
                                     class="absolute start-[20px] mt-2.5 w-5 border-t border-border border-dashed"></span>
-                                  <div class="flex-shrink-0 mt-0.5 ms-5">
+                                  <a href="" class="flex-shrink-0 mt-0.5 ms-5">
                                     <img class="h-5 w-5" src="assets/media/file-types/pdf.svg" alt="PDF" />
-                                  </div>
+                                  </a>
                                   <div class="flex-1 min-w-0">
                                     <div class="flex items-start justify-between gap-3">
                                       <div class="flex-1">
-                                        <a href="#"
-                                          class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white block">
-                                          Sample PDF.pdf</a>
-                                        <span class="text-2sm text-gray-700 mb-2 block dark:text-white"> By Walter
-                                          Craighead</span>
+                                        <a href="" class="flex-1">
+                                          <span
+                                            class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white block">
+                                            Sample PDF.pdf</span>
+                                          <span class="text-2sm text-gray-700 mb-2 block dark:text-white"> By Walter
+                                            Craighead</span>
+                                        </a>
                                         <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
                                           <input class="kt-switch" name="param" type="checkbox" value="1" />
                                           <span class="font-inter">Reveal</span>
@@ -405,21 +410,23 @@
                                 <div class="flex items-start gap-3 py-2.5 relative">
                                   <span
                                     class="absolute start-[20px] mt-2.5 w-5 border-t border-border border-dashed"></span>
-                                  <div class="flex-shrink-0 mt-0.5 ms-5">
+                                  <a href="" class="flex-shrink-0 mt-0.5 ms-5">
                                     <img class="h-5 w-5" src="assets/media/file-types/excel.svg" alt="Excel" />
-                                  </div>
+                                  </a>
                                   <div class="flex-1 min-w-0">
                                     <div class="flex items-start justify-between gap-3">
                                       <div class="flex-1">
-                                        <a href="#"
+                                        <a href="#"> 
+                                          <span
                                           class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white block">
-                                          Sample Doc</a>
-                                        <span class="text-2sm text-gray-700 mb-2 block dark:text-white"> By Walter
-                                          Craighead</span>
-                                        <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
-                                          <input class="kt-switch" name="param" type="checkbox" value="1" />
-                                          <span class="font-inter">Reveal</span>
-                                        </div>
+                                          Sample Doc</span>
+                                          <span class="text-2sm text-gray-700 mb-2 block dark:text-white"> By Walter
+                                            Craighead</span>
+                                        </a>
+                                          <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
+                                            <input class="kt-switch" name="param" type="checkbox" value="1" />
+                                            <span class="font-inter">Reveal</span>
+                                          </div>
                                       </div>
                                     </div>
                                   </div>
@@ -454,20 +461,24 @@
                     </div>
                   </div>
                 </div>
-                <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
+                <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border hover-card">
                   <div class="flex grow gap-2.5 w-full">
-                    <div
-                      class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
-                      <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
-                      <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
-                      <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
-                    </div>
+                    <a href="">
+                      <div
+                        class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
+                        <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
+                        <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
+                        <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
+                      </div>
+                    </a>
                     <div class="flex flex-col">
-                      <span
-                        class="text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">
-                        Document 1</span>
-                      <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample PDF.pdf</span>
-                      <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
+                      <a href="" class="flex flex-col">
+                        <span
+                          class="text-mono text-sm font-semibold cursor-pointer hover-text -mt-0.5 line-height-1 pb-1">
+                          Document 1</span>
+                        <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample PDF.pdf</span>
+                        <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
+                      </a>
                       <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
                         <input class="kt-switch" name="param" type="checkbox" value="1" />
                         <span class="font-inter">Reveal</span>
@@ -497,20 +508,24 @@
                     </div>
                   </div>
                 </div>
-                <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
+                <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border hover-card">
                   <div class="flex grow gap-2.5 w-full">
-                    <div
-                      class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
-                      <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
-                      <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
-                      <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
-                    </div>
+                    <a href="">
+                      <div
+                        class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
+                        <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
+                        <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
+                        <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
+                      </div>
+                    </a>
                     <div class="flex flex-col">
-                      <span
-                        class="text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">
-                        Document 1</span>
-                      <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample PDF.pdf</span>
-                      <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
+                      <a href="" class="flex flex-col">
+                        <span
+                          class="text-mono text-sm font-semibold cursor-pointer hover-text -mt-0.5 line-height-1 pb-1">
+                          Document 1</span>
+                        <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample PDF.pdf</span>
+                        <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
+                      </a>
                       <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
                         <input class="kt-switch" name="param" type="checkbox" value="1" />
                         <span class="font-inter">Reveal</span>
@@ -540,20 +555,24 @@
                     </div>
                   </div>
                 </div>
-                <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
+                <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border hover-card">
                   <div class="flex grow gap-2.5 w-full">
-                    <div
-                      class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
-                      <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
-                      <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
-                      <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
-                    </div>
+                    <a href="">
+                      <div
+                        class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
+                        <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
+                        <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
+                        <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
+                      </div>
+                    </a>
                     <div class="flex flex-col">
-                      <span
-                        class="text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">
-                        Document 1</span>
-                      <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample PDF.pdf</span>
-                      <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
+                      <a href="" class="flex flex-col">
+                        <span
+                          class="text-mono text-sm font-semibold cursor-pointer hover-text -mt-0.5 line-height-1 pb-1">
+                          Document 1</span>
+                        <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample PDF.pdf</span>
+                        <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
+                      </a>
                       <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
                         <input class="kt-switch" name="param" type="checkbox" value="1" />
                         <span class="font-inter">Reveal</span>
@@ -583,7 +602,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
+                <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border hover-card">
                   <div class="flex grow gap-2.5 w-full">
                     <div
                       class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
@@ -592,11 +611,13 @@
                       <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
                     </div>
                     <div class="flex flex-col">
-                      <span
-                        class="text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">
-                        Document 1</span>
-                      <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample PDF.pdf</span>
-                      <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
+                      <a href="">
+                        <span
+                          class="text-mono text-sm font-semibold cursor-pointer hover-text -mt-0.5 line-height-1 pb-1">
+                          Document 1</span>
+                        <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample PDF.pdf</span>
+                        <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
+                      </a>
                       <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
                         <input class="kt-switch" name="param" type="checkbox" value="1" />
                         <span class="font-inter">Reveal</span>
@@ -626,20 +647,24 @@
                     </div>
                   </div>
                 </div>
-                <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
+                <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border hover-card">
                   <div class="flex grow gap-2.5 w-full">
-                    <div
-                      class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
-                      <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
-                      <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
-                      <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
-                    </div>
+                    <a href="">
+                      <div
+                        class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
+                        <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
+                        <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
+                        <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
+                      </div>
+                    </a>
                     <div class="flex flex-col">
-                      <span
-                        class="text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">
-                        Document 1</span>
-                      <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample PDF.pdf</span>
-                      <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
+                      <a href="" class="flex flex-col">
+                        <span
+                          class="text-mono text-sm font-semibold cursor-pointer hover-text -mt-0.5 line-height-1 pb-1">
+                          Document 1</span>
+                        <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample PDF.pdf</span>
+                        <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
+                      </a>
                       <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
                         <input class="kt-switch" name="param" type="checkbox" value="1" />
                         <span class="font-inter">Reveal</span>
@@ -669,20 +694,22 @@
                     </div>
                   </div>
                 </div>
-                <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border">
+                <div class="card flex items-start gap-3 pt-2.5 pb-5 border-b border-dashed border-border hover-card">
                   <div class="flex grow gap-2.5 w-full">
-                    <div
+                    <a href=""
                       class="min-w-[65px] w-[65px] h-[50px] flex items-center justify-center flex-col gap-1 border-2 bg-yellow-300 rounded-md dark:border-zinc-600">
                       <span class="text-3xs uppercase font-inter font-medium dark:text-dark">EXHIBIT</span>
                       <span class="text-2sm font-inter font-semibold line-height-1 dark:text-dark">001</span>
                       <span class="w-[40px] h-[2px] bg-mono dark:bg-dark mt-0.5"></span>
-                    </div>
+                    </a>
                     <div class="flex flex-col">
-                      <span
-                        class="text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">
-                        Document 1</span>
-                      <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample PDF.pdf</span>
-                      <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
+                      <a href="" class="flex flex-col hover-text">
+                        <span
+                          class="hover-text text-mono text-sm font-semibold cursor-pointer hover:text-primary -mt-0.5 line-height-1 pb-1">
+                          Document 1</span>
+                        <span class="text-xs text-muted-foreground -mt-0.5 mb-1 dark:text-white">Sample PDF.pdf</span>
+                        <span class="text-xs text-accent-foreground/60 mb-2">By Walter Craighead</span>
+                      </a>
                       <div class="flex items-center gap-1.5 text-xs font-semibold uppercase">
                         <input class="kt-switch" name="param" type="checkbox" value="1" />
                         <span class="font-inter">Reveal</span>
