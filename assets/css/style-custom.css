@@ -18,6 +18,10 @@
   width: 74px;
 }
 
+.w-\[140px\] {
+  width: 140px;
+}
+
 .w-\[180px\] {
   width: 180px;
 }
@@ -38,12 +42,31 @@
   height: 56px;
 }
 
+.min-h-\[75px\] {
+  height: 75px;
+}
+
 .h-half {
   height: 50%;
 }
 
 .min-w-\[340px\] {
   min-width: 340px;
+}
+
+@media (width >=48rem) {
+  .md\:w-\[200px\] {
+    width: 200px;
+  }
+  .md\:min-w-full {
+    min-width: 100%;
+  }
+  .md\:p-7 {
+    padding: calc(var(--spacing) * 7);
+  }
+  .md\:pb-0 {
+    padding-bottom: calc(var(--spacing) * 0);
+  }
 }
 
 .h-\[200px\] {
@@ -69,8 +92,20 @@
   min-height: 500px;
 }
 
+@media (width >=48rem) {
+  .md\:min-h-\[500px\] {
+    min-height: 500px;
+  }
+}
+
 .max-h-\[100vh\] {
   max-height: 100vh;
+}
+
+@media (width >=48rem) {
+  .md\:flex-col {
+    flex-direction: column;
+  }
 }
 
 .border-blue-200 {
@@ -150,6 +185,10 @@
   right: calc(var(--spacing) * 1);
 }
 
+.right-2 {
+  right: calc(var(--spacing) * 2);
+}
+
 .px-px {
   padding: 0 1px;
 }
@@ -206,7 +245,7 @@
     border-color: #e5e7eb !important;
   }
 
-@media (min-width: 64rem) {
+@media (width >= 64rem) {
   .lg\:min-w-12 {
     min-width: 3rem;
   }
@@ -232,12 +271,12 @@
   }
 }
 
-@media (max-width: 1279px) {
+@media (width <= 80rem) {
   .px-1\.5 {
     padding-inline: 0;
   }
 }
-@media (min-width: 1280px) {
+@media (width >=80rem) {
   .rounded-custom {
     border-radius: 0.5rem;
   }
@@ -403,6 +442,11 @@
 .kt-badge-light.kt-badge-info:is(.dark *) {
   background-color: var(--color-violet-100);
   color: var(--color-violet-800);
+}
+
+
+@media (width <=48rem) {
+  
 }
 
 /*  */
