@@ -42,6 +42,10 @@
   height: 56px;
 }
 
+.min-h-\[75px\] {
+  height: 75px;
+}
+
 .h-half {
   height: 50%;
 }
