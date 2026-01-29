@@ -3587,29 +3587,31 @@
 
       if (!firstPane || !secondPane || !summaryBtn || !chatBtn) return;
 
-      function expandFirst() {
-        firstPane.classList.remove('h-half');
-        firstPane.classList.add('h-auto');
+      // adjust this if your "half" height is different
+      const HALF_HEIGHT = '50%';
 
-        secondPane.classList.remove('h-auto');
-        secondPane.classList.add('h-half');
+      function expandFirst() {
+        // first = auto
+        firstPane.style.height = 'auto';
+        firstPane.style.flex = 'unset';
+
+        // second = half
+        secondPane.style.height = HALF_HEIGHT;
+        secondPane.style.flex = '1';
       }
 
       function expandSecond() {
-        secondPane.classList.remove('h-half');
-        secondPane.classList.add('h-auto');
+        // second = auto
+        secondPane.style.height = 'auto';
+        secondPane.style.flex = 'unset';
 
-        firstPane.classList.remove('h-auto');
-        firstPane.classList.add('h-half');
+        // first = half
+        firstPane.style.height = HALF_HEIGHT;
+        firstPane.style.flex = '1';
       }
 
-      summaryBtn.addEventListener('click', function () {
-        expandFirst();
-      });
-
-      chatBtn.addEventListener('click', function () {
-        expandSecond();
-      });
+      summaryBtn.addEventListener('click', expandFirst);
+      chatBtn.addEventListener('click', expandSecond);
     });
   </script>
 
