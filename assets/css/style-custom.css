@@ -42,6 +42,10 @@
   height: 56px;
 }
 
+.min-h-\[50px\] {
+  height: 50px;
+}
+
 .min-h-\[75px\] {
   height: 75px;
 }
@@ -54,16 +58,23 @@
   min-width: 340px;
 }
 
+.min-w-\[450px\] {
+  min-width: 450px;
+}
+
 @media (width >=48rem) {
   .md\:w-\[200px\] {
     width: 200px;
   }
+
   .md\:min-w-full {
     min-width: 100%;
   }
+
   .md\:p-7 {
     padding: calc(var(--spacing) * 7);
   }
+
   .md\:pb-0 {
     padding-bottom: calc(var(--spacing) * 0);
   }
@@ -88,6 +99,7 @@
 .min-h-\[150px\] {
   min-height: 150px;
 }
+
 .min-h-\[500px\] {
   min-height: 500px;
 }
@@ -115,6 +127,7 @@
 .hover-border-primary:hover {
   border-color: var(--primary);
 }
+
 .hover-card:hover .hover-text {
   color: var(--primary) !important;
 }
@@ -212,6 +225,10 @@
   padding-top: calc(var(--spacing) * 4.5);
 }
 
+.pb-0 {
+  padding-bottom: 0;
+}
+
 .pb-4 {
   padding-bottom: calc(var(--spacing) * 4);
 }
@@ -249,16 +266,16 @@
 }
 
 .border-gray-custom {
-    border-color: #e5e7eb !important;
-  }
+  border-color: #e5e7eb !important;
+}
 
-  @media (max-width: 1279px) {
-    .xl-hidden {
-      display: none;
-    }
+@media (max-width: 1279px) {
+  .xl-hidden {
+    display: none;
   }
+}
 
-@media (width >= 64rem) {
+@media (width >=64rem) {
   .lg\:min-w-12 {
     min-width: 3rem;
   }
@@ -272,7 +289,7 @@
   }
 
   .lg\:mx-3 {
-    margin: 0 14px ;
+    margin: 0 14px;
   }
 
   .lg-min-h-42 {
@@ -284,11 +301,12 @@
   }
 }
 
-@media (width <= 80rem) {
+@media (width <=80rem) {
   .px-1\.5 {
     padding-inline: 0;
   }
 }
+
 @media (width >=80rem) {
   .rounded-custom {
     border-radius: 0.5rem;
@@ -304,8 +322,8 @@
 }
 
 .lg-min-h-42 {
-    min-height: 30px ;
-  }
+  min-height: 30px;
+}
 
 .kt-card-group>.card:last-child {
   border-bottom: 0 !important;
@@ -375,6 +393,7 @@
 }
 
 @media (width >=80rem) {
+
   .kt_aside_left.fixed,
   .kt_aside_right.fixed {
     position: relative;
@@ -382,6 +401,7 @@
 }
 
 @media (width <=80rem) {
+
   .kt_aside_left,
   .kt_aside_right {
     z-index: 10;
@@ -458,9 +478,7 @@
 }
 
 
-@media (width <=48rem) {
-  
-}
+@media (width <=48rem) {}
 
 /*  */
 /* PDF */
@@ -503,15 +521,15 @@
     gap: 6px !important;
     padding: 6px 8px !important;
   }
-  
+
   #divToolbar .d-flex {
     flex-wrap: wrap;
   }
-  
+
   .sm\:justify-center {
     justify-content: center !important;
   }
-  
+
   .h-36 {
     height: 30px;
   }
